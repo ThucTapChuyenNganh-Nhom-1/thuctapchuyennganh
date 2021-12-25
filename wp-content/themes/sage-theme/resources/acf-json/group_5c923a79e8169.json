@@ -42,6 +42,15 @@
                     "sub_fields": [],
                     "min": "",
                     "max": ""
+                },
+                "layout_61c6ef2ac82cb": {
+                    "key": "layout_61c6ef2ac82cb",
+                    "name": "mod_list_member",
+                    "label": "Mod List Member",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Module",
@@ -66,6 +75,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1640424493,
-    "local_file": "C:UsersASUSLocal Sitesbtnhom1apppublic\/wp-content\/themes\/sage-theme\/resources\/acf-json\/group_5c923a79e8169.json"
+    "modified": 1640427312,
+    "local_file": "C:UserstrannLocal Sitesbtnhom1apppublic\/wp-content\/themes\/sage-theme\/resources\/acf-json\/group_5c923a79e8169.json"
 }
