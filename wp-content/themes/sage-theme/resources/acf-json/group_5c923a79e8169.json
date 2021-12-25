@@ -52,10 +52,17 @@
                     "min": "",
                     "max": ""
                 },
+<<<<<<< HEAD
                 "layout_61c6f4617648b": {
                     "key": "layout_61c6f4617648b",
                     "name": "mo_abc",
                     "label": "Mod ABC",
+=======
+                "layout_61c6f45d94f15": {
+                    "key": "layout_61c6f45d94f15",
+                    "name": "mod_about_us",
+                    "label": "Mod About Us",
+>>>>>>> 449bda9b91fa748b1f6a6bfc7debd271c00f1d39
                     "display": "block",
                     "sub_fields": [],
                     "min": "",
@@ -84,6 +91,11 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
+<<<<<<< HEAD
     "modified": 1640428643,
     "local_file": "C:UsersASUSLocal Sitesbtnhom1apppublic\/wp-content\/themes\/sage-theme\/resources\/acf-json\/group_5c923a79e8169.json"
+=======
+    "modified": 1640428639,
+    "local_file": "C:UsersASUSLocal Sitessagethemeapppublic\/wp-content\/themes\/sage-theme\/resources\/acf-json\/group_5c923a79e8169.json"
+>>>>>>> 449bda9b91fa748b1f6a6bfc7debd271c00f1d39
 }
