@@ -34,7 +34,5 @@
   });
 </script>
 
-<?php if($_SERVER['SERVER_PORT'] == '3333'): ?>
-<!-- only run local -->
+
 <script defer src='<?= \App\asset_path("scripts/app.js"); ?>'></script>
-<?php endif; ?>

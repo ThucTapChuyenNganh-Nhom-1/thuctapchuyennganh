@@ -1,1 +1,0 @@
-<div class="container"><h3>Module: Mod Banner</h3></div>
