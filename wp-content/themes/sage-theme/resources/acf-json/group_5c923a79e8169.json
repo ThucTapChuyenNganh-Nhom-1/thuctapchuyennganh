@@ -25,17 +25,8 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_5f73ffbf1dffe": {
-                    "key": "layout_5f73ffbf1dffe",
-                    "name": "example2",
-                    "label": "Example21",
-                    "display": "block",
-                    "sub_fields": [],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_61c6e42b8883c": {
-                    "key": "layout_61c6e42b8883c",
+                "layout_61c8158c04527": {
+                    "key": "layout_61c8158c04527",
                     "name": "mod_banner",
                     "label": "Mod Banner",
                     "display": "block",
@@ -43,26 +34,82 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_61c6ef2ac82cb": {
-                    "key": "layout_61c6ef2ac82cb",
-                    "name": "mod_list_member",
-                    "label": "Mod List Member",
+                "layout_61c815b9e9965": {
+                    "key": "layout_61c815b9e9965",
+                    "name": "mod_header",
+                    "label": "Mod Header",
                     "display": "block",
                     "sub_fields": [],
                     "min": "",
                     "max": ""
                 },
-<<<<<<< HEAD
-                "layout_61c6f4617648b": {
-                    "key": "layout_61c6f4617648b",
-                    "name": "mo_abc",
-                    "label": "Mod ABC",
-=======
-                "layout_61c6f45d94f15": {
-                    "key": "layout_61c6f45d94f15",
+                "layout_61c8160e56686": {
+                    "key": "layout_61c8160e56686",
                     "name": "mod_about_us",
                     "label": "Mod About Us",
->>>>>>> 449bda9b91fa748b1f6a6bfc7debd271c00f1d39
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_61c8163bcf8ef": {
+                    "key": "layout_61c8163bcf8ef",
+                    "name": "mod_member",
+                    "label": "Mod Member",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_61c8173bd7226": {
+                    "key": "layout_61c8173bd7226",
+                    "name": "mod_project",
+                    "label": "Mod Project",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_61c8175d9de3f": {
+                    "key": "layout_61c8175d9de3f",
+                    "name": "mod_footer",
+                    "label": "Mod Footer",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_61c817c0a3730": {
+                    "key": "layout_61c817c0a3730",
+                    "name": "mod_nav_info",
+                    "label": "Mod Nav Info",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_61c819736bc3d": {
+                    "key": "layout_61c819736bc3d",
+                    "name": "mod_info",
+                    "label": "Mod Info",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_61c819a49b89d": {
+                    "key": "layout_61c819a49b89d",
+                    "name": "mod_ability",
+                    "label": "Mod Ability",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_61c819d4af549": {
+                    "key": "layout_61c819d4af549",
+                    "name": "mod_contact",
+                    "label": "Mod Contact",
                     "display": "block",
                     "sub_fields": [],
                     "min": "",
@@ -91,11 +138,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-<<<<<<< HEAD
-    "modified": 1640428643,
-    "local_file": "C:UsersASUSLocal Sitesbtnhom1apppublic\/wp-content\/themes\/sage-theme\/resources\/acf-json\/group_5c923a79e8169.json"
-=======
-    "modified": 1640428639,
-    "local_file": "C:UsersASUSLocal Sitessagethemeapppublic\/wp-content\/themes\/sage-theme\/resources\/acf-json\/group_5c923a79e8169.json"
->>>>>>> 449bda9b91fa748b1f6a6bfc7debd271c00f1d39
+    "modified": 1640503767,
+    "local_file": "C:UsersASUSLocal Sitesthuctap9thwonderapppublic\/wp-content\/themes\/sage-theme\/resources\/acf-json\/group_5c923a79e8169.json"
 }
