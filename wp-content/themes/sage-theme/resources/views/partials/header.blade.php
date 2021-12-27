@@ -1,4 +1,4 @@
-<header id="header" class="module header w-full top-0 left-0 fixed z-200 down_lg:overflow-hidden">
+{{-- <header id="header" class="module header w-full top-0 left-0 fixed z-200 down_lg:overflow-hidden">
     <div class="container">
         <nav class="row navbar items-center">
             <div
@@ -46,4 +46,4 @@
             </div>
         </nav>
     </div>
-</header>
+</header> --}}

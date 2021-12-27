@@ -14,9 +14,13 @@ module.exports = {
   darkMode: false,
   theme: {
     fontFamily: {
+      sans: ['Poppins', 'sans-serif'],
       montserrat: ['Montserrat', 'sans-serif'],
       syncopate: ['Syncopate', 'sans-serif']
     },
+    backgroundImage: (theme) => ({
+      'footer': 'url(\'../images/footer.png\')'
+    }),
 
     spacing: configs.spaces,
     maxWidth: configs.maxWidths,
@@ -115,7 +119,7 @@ module.exports = {
     backdropSepia: false,
     isolation: false,
     mixBlendMode: false,
-    backgroundBlendMode: false
+    backgroundBlendMode: true
   },
   plugins: [
     function ({ addComponents }) {

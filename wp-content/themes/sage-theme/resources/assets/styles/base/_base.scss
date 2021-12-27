@@ -1,13 +1,13 @@
 @layer base {
   body {
-    @apply text-base text-black xl:text-lg;
+    @apply text-base font-sans text-black xl:text-lg;
   }
   html {
     @apply m-0;
   }
   html,
   body{
-    @apply overflow-x-hidden bg-gray-200;
+    @apply overflow-x-hidden bg-white;
   }
   h1,
   .h1 {
@@ -82,5 +82,5 @@
 }
 
 a:not(.btn):not(.no-underline) {
-  @apply text-brown-100 underline hover:no-underline;
+  @apply no-underline hover:underline;
 }

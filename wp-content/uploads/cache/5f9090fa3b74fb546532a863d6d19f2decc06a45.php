@@ -56,9 +56,7 @@
                     <a href="#" class="no-underline"><span class="icomoon icon-instagram"></span></a>
                     <a href="#" class="no-underline"><span class="icomoon icon-linkedin2"></span></a>
                 </div>
-                {{-- <p class="mt-4 text-sm text-gray-500">
-                    viết cái j đó
-                </p> --}}
+                
             </div>
         </div>
     </div>
