@@ -1,0 +1,32 @@
+.mod-footer{
+    img{
+        @apply h-16
+    }
+}
+.footer-input_mail{
+
+}
+.footer-logo{
+    img{
+        @apply h-32
+    }
+    p{
+        @apply text-sm text-white
+    }
+}
+.footer-contact{
+    p{
+        @apply text-base font-bold tracking-wide text-white pb-6
+    }
+}
+.footer-social{
+    span{
+        @apply text-base font-bold tracking-wide text-white
+    }
+    p{
+        @apply mt-4 text-base text-white
+    }
+    img{
+        @apply h-13
+    }
+}

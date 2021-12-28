@@ -19,7 +19,11 @@ module.exports = {
       syncopate: ['Syncopate', 'sans-serif']
     },
     backgroundImage: (theme) => ({
-      'footer': 'url(\'../images/footer.png\')'
+      'footer': 'url(\'../images/footer.png\')',
+      'footer_home': 'url(\'../images/footer-bg.png\')',
+      'slider_left_dec': 'url(\'../images/slider-left-dec.png\')',
+      'services_left_dec': 'url(\'../images/services-left-dec.png\')',
+      'services_right_dec': 'url(\'../images/services-right-dec.png\')'
     }),
 
     spacing: configs.spaces,
