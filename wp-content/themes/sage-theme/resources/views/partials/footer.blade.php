@@ -1,4 +1,4 @@
-<footer class="mod-footer fadeIn_1">
+{{-- <footer class="mod-footer fadeIn_1">
     <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-[1280px] md:px-24 lg:px-8 ">
         <div class="footer-input_mail w-2/4 text-center mx-auto text-sm hidden xl:block md:block lg:block">
             <div class="col-lg-8 offset-lg-2">
@@ -87,7 +87,7 @@
                 </p>
             </div>
         </div>
-        {{-- Bên dưới khỏi đổ dữ liệu --}}
+        
         <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row p-0">
             <p class="text-sm text-white">
                 © Copyright 2021 by Nhóm 1. All rights reserved.
@@ -114,4 +114,4 @@
             </ul>
         </div>
     </div>
-</footer>
+</footer> --}}

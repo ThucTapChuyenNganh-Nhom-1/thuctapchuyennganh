@@ -13,6 +13,46 @@ a {
   color: #000;
 }
 
+.menu-info ul, 
+.project-img-avt,
+#ability svg{
+  display: none;
+}
+
+.info-table-content{
+  width: 500px;
+    display: inline-flex;
+    text-align: left;
+    justify-content: space-between;
+}
+h1,h2, 
+.info-table{
+  text-align: center;
+}
+
+.contact-content{
+  display: flex;
+}
+
+.contact-content p{
+  margin-right: 8px;
+}
+
+.overflow-hidden{
+  img{
+    width: 220px;
+  }
+}
+#info{
+  p{
+    text-align: justify;
+  }
+}
+.ability-content{
+  display: flex;
+  justify-content: space-around;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -163,7 +203,7 @@ li {
 img {
   page-break-inside: avoid;
   page-break-after: avoid;
-  max-width: 700px;
+  max-width: 500px;
 }
 
 .d-table {

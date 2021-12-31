@@ -2,7 +2,7 @@
     <div class="container">
         <div class="pb-4 text-center">
             <h1> Thông tin cá nhân </h1>
-            <p class="text-base md:text-lg lg:text-xl text-gray-700 text-justify">
+            <p>
                 Em hiện là sinh viên chuyên ngành công nghệ
                 thông tin năm 4; ưu điểm nhiệt tình, kiên nhẫn,
                 ham học hỏi và có khả năng phân tích, lập
@@ -16,45 +16,45 @@
                 lai.
             </p>
         </div>
-        <div class="row justify-center">
+        <div class="info-table row justify-center">
             <!-- nội dung trái-->
             <div class="col md:w-4/5 lg:w-1/2">
                 <img class="rounded-3xl" src="<?php echo get_template_directory_uri(); ?>/assets/images/long.jpg" alt="avata_long">
             </div>
             <!-- nội dung phải -->
-            <div class="col mt-10 md:w-4/5 lg:w-1/2">
+            <div class="info-table-content col mt-10 md:w-4/5 lg:w-1/2">
                 <div class="row">
                     <div class="col w-1/2">
-                        <h6 class="text-base md:text-lg mb-2 font-semibold leading-5">
+                        <h6>
                             Họ tên:
                         </h6>
-                        <p class="text-base md:text-lg text-gray-900">
+                        <p>
                             Lê Minh Long
                         </p>
                     </div>
                     <div class="col w-1/2 ">
-                        <h6 class="text-base md:text-lg mb-2 font-semibold leading-5">
+                        <h6>
                             Ngày sinh
                         </h6>
-                        <p class="text-base md:text-lg text-gray-900">
+                        <p>
                             01/06/2000
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col w-1/2 ">
-                        <h6 class="text-base md:text-lg mb-2 font-semibold leading-5">
+                        <h6>
                             Giới tính
                         </h6>
-                        <p class="text-base md:text-lg text-gray-900">
+                        <p>
                             Nam
                         </p>
                     </div>
                     <div class="col w-1/2  ">
-                        <h6 class="text-base md:text-lg mb-2 font-semibold leading-5">
+                        <h6>
                             Sở thích
                         </h6>
-                        <p class="text-base md:text-lg text-gray-900">
+                        <p>
                             Nghe nhạc, chơi game, bơi lội, ăn uống
                         </p>
                     </div>

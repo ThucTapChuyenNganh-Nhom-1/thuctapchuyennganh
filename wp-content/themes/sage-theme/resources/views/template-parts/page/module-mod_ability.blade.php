@@ -4,7 +4,7 @@
             <h2> Năng lực </h2>
         </div>
         <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div class="grid gap-8 sm:mx-auto md:grid-cols-2 lg:max-w-full lg:grid-cols-3">
+            <div class="ability-content grid gap-8 sm:mx-auto md:grid-cols-2 lg:max-w-full lg:grid-cols-3">
                 <div class="flex justify-center">
                     <div class="sm:mr-4">
                         <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
@@ -15,7 +15,7 @@
                         </div>
                     </div>
                     <div>
-                        <h6 class="mb-2 font-semibold leading-5">Ngôn ngữ</h6>
+                        <h6>Ngôn ngữ</h6>
                         <ul class="p-0 grid grid-cols-2 gap-x-10">
                             <li class="flex items-start">
                                 <span class="mr-1 mt-4">
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                     <div>
-                        <h6 class="mb-2 font-semibold leading-5">Kỹ năng</h6>
+                        <h6>Kỹ năng</h6>
                         <ul class="p-0 grid grid-cols-2 gap-x-10">
                             <li class="flex items-start">
                                 <span class="mr-1 mt-4">
@@ -118,7 +118,7 @@
                         </div>
                     </div>
                     <div>
-                        <h6 class="mb-2 font-semibold leading-5">Công cụ</h6>
+                        <h6>Công cụ</h6>
                         <ul class="p-0 grid grid-cols-2 gap-x-10">
                             <li class="flex items-start">
                                 <span class="mr-1 mt-4">

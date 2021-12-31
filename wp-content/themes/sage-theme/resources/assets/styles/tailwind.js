@@ -1,5 +1,5 @@
 const configs = require('./config')
-const mode = process.env.npm_lifecycle_event === 'start' ? 'jit' : 'aot'
+const mode = process.env.npm_lifecycle_event === 'start' ? 'jit' : 'jit'
 console.log('\n Mode: ', mode)
 module.exports = {
   purge: {

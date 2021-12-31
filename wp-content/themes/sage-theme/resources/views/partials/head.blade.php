@@ -8,6 +8,7 @@
   <meta name="apple-touch-fullscreen" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="description" content="Encompass Technology">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <link href="https://fonts.googleapis.com" rel="dns-prefetch" crossorigin>
   <link href="https://fonts.googleapis.com" rel="preconnect" crossorigin>

@@ -1,7 +1,7 @@
-<section id="contact" class=" md:ml-60 relative bg-footer bg-cover h-440 bg-no-repeat">
+<section id="contact" class="-mb-25 md:-mb-50 md:ml-60 relative bg-footer bg-cover h-440 bg-no-repeat">
     <div class="container pt-95">
         <div class="pb-4 text-center">
-            <h2 class="menu_name">
+            <h2>
                 Liên hệ
             </h2>
         </div>
@@ -11,8 +11,8 @@
                     <div class="text-2xl pr-6 self-center p-2">
                         <span class="icomoon icon-icon-phone"></span>
                     </div>
-                    <div>
-                        <p class="m-0 text-gray-800 ">Điện thoại:</p>
+                    <div class="contact-content">
+                        <p>Điện thoại:</p>
                         <a href="tel:0356827189" aria-label="Our phone" title="Our phone"
                             class="transition-colors duration-300">
                             0356827189
@@ -24,9 +24,9 @@
                     <div class="text-2xl pr-6 self-center p-2">
                         <span class="icomoon icon-mail-envelope-closed2"></span>
                     </div>
-                    <div>
-                        <p class="m-0 text-gray-800 ">Email:</p>
-                        <a href="" aria-label="Our email" title="Our email"
+                    <div class="contact-content">
+                        <p>Email:</p>
+                        <a href="#" aria-label="Our email" title="Our email"
                             class="transition-colors duration-300">
                             leminhlong11b7@gmail.com
                         </a>
@@ -36,8 +36,8 @@
                     <div class="text-2xl pr-6 self-center p-2">
                         <span class="icomoon icon-icon-map"></span>
                     </div>
-                    <div>
-                        <p class="m-0 text-gray-800 ">Địa chỉ:</p>
+                    <div class="contact-content">
+                        <p>Địa chỉ:</p>
                         <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer"
                             aria-label="Our address" title="Our address"
                             class="transition-colors duration-300">
