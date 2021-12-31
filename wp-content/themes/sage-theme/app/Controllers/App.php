@@ -97,4 +97,29 @@ class App extends Controller
     {
         return Queries::getOptionField('ns_404_page_content');
     }
+
+    public static function getMemberInfo($post)
+    {
+        // $dataMem = $post;
+        // foreach ($post as $test) {
+        //     $cus = get_field('mota',$test->ID);
+        //   }
+
+
+        // foreach ($post as $item) {
+        //     $item->post_mota = get_field('mota', $item->ID);
+        // // var_dump($item);
+
+        // }
+        $post->des = get_field('description', $post->ID);
+        $post->name = get_field('name', $post->ID);
+        $post->sex = get_field('sex', $post->ID);
+        $post->dateOB = get_field('date', $post->ID);
+        $post->hobby = get_field('hobby', $post->ID);
+        $post->avt = get_field('personal_image', $post->ID);
+
+        return $post;
+        
+    }
+
 }

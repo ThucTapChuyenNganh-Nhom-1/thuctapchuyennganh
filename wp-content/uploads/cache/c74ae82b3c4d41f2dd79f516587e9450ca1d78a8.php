@@ -1,20 +1,11 @@
 <section id="info" class="info md:ml-60 -mt-90">
     <div class="container">
         <div class="pb-4 text-center">
-            <h1> Thông tin cá nhân </h1>
-            <p>
-                Em hiện là sinh viên chuyên ngành công nghệ
-                thông tin năm 4; ưu điểm nhiệt tình, kiên nhẫn,
-                ham học hỏi và có khả năng phân tích, lập
-                trình, kiểm thử. Em đang tìm kiếm vị trí thực
-                tập sinh lập trình web để có thể vận dụng
-                những kiến thức đã học về phân tích, thiết kế
-                trang web vào trong công việc. Những kinh
-                nghiệm và bài học mà em có được trong việc
-                thực tập sẽ giúp em xây dựng những kỹ năng
-                cần thiết cho nghề nghiệp của em trong tương
-                lai.
-            </p>
+            <?php
+                // var_dump($data);
+                var_dump($data->module);
+                ?>
+            
         </div>
         <div class="info-table row justify-center">
             <!-- nội dung trái-->

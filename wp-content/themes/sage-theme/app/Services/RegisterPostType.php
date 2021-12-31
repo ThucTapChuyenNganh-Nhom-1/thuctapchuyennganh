@@ -20,6 +20,7 @@ class RegisterPostType
             'location' => true,
             'faq' => true,
             'testimonial' => true,
+            'member' => true
         );
         add_action('init', array($this, 'setup'));
     }
@@ -46,6 +47,23 @@ class RegisterPostType
             $this->registerFaq($types);
             //testimonial
             $this->registerTestimonial($types);
+             //member
+             $this->registerMember($types);
+        }
+    }
+
+    private function registerMember($types)
+    {
+        $member = 'member';
+        if (isset($types[$member]) && $types[$member]) {
+            $this->registerType(array(
+                // $this->taxonomyName => 'member category',
+                // $this->taxonomySlug => 'category_member',
+                $this->typeName => 'Member',
+                $this->typeSlug => $member,
+                // FEATURE_IMG_NAME => 'Avatar',
+                ICON_ID => 'dashicons-groups',
+            ));
         }
     }
 
