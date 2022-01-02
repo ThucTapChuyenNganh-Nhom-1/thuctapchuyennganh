@@ -10,14 +10,9 @@
                         </svg>
                     </div>
                 </a>
-                <h1>
-                    Theo dõi chúng tôi trên mạng xã hội
-                </h1>
-                <p>
-                    Trang này được tạo ra bằng cách sử dụng HTML5, CSS, JS,...
-                    Hãy liên hệ ngay với chúng tôi trên các mạng xã hội ngay bây
-                    giờ để được đặt hàng tạo trang web của riêng bạn.
-                </p>
+                
+                {!! $data->module['content'] !!}
+
                 <hr class="mb-5 border-gray-300" />
                 <div class="flex items-center justify-center lg:justify-start ls_icon space-x-6">
                     <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
@@ -36,7 +31,7 @@
                 </div>
             </div>
             <div class="col slideInRight w-full lg:w-6/12 right-banner">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider-dec.png" alt="" />
+                <img src="{!! $data->module['image']->url !!}" alt="{!! $data->module['image']->alt !!}" />
             </div>
         </div>
     </div>
