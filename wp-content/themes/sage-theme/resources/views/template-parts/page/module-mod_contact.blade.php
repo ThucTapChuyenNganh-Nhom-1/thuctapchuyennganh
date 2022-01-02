@@ -1,4 +1,4 @@
-<section id="contact" class="-mb-25 md:-mb-50 md:ml-60 relative bg-footer bg-cover h-440 bg-no-repeat">
+{{-- <section id="contact" class="-mb-25 md:-mb-50 md:ml-60 relative bg-footer bg-cover h-440 bg-no-repeat">
     <div class="container pt-95">
         <div class="pb-4 text-center">
             <h2>
@@ -56,10 +56,7 @@
                     <a href="#" class="no-underline"><span class="icomoon icon-instagram"></span></a>
                     <a href="#" class="no-underline"><span class="icomoon icon-linkedin2"></span></a>
                 </div>
-                {{-- <p class="mt-4 text-sm text-gray-500">
-                    viết cái j đó
-                </p> --}}
             </div>
         </div>
     </div>
-</section>
+</section> --}}

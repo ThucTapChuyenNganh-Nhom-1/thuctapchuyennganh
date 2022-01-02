@@ -1,4 +1,4 @@
-<section id="info" class="info md:ml-60 -mt-90">
+{{-- <section id="info" class="info md:ml-60 -mt-90">
     <div class="container">
         <div class="pb-4 text-center">
             <h1> Thông tin cá nhân </h1>
@@ -62,4 +62,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}

@@ -1,4 +1,4 @@
-<div
+{{-- <div
     class="menu-info w-full z-1 md:w-60 px-2 bg-blue-500 text-center fixed bottom-0 md:pt-8 md:top-0 md:left-0 h-27 md:h-screen md:border-r-2 md:border-gray-600">
     <div class="md:relative mx-auto lg:float-right">
         <ul class="list-none pl-5 flex justify-between flex-row md:flex-col text-center md:text-left">
@@ -32,7 +32,7 @@
             </li>
         </ul>
     </div>
-</div>
+</div> --}}
 
 
 {{-- <div class="w-full md:w-44 px-2 text-center fixed bottom-0 md:pt-8 md:top-0 md:left-0 h-16 md:h-screen md:border-r-4 md:border-gray-600">

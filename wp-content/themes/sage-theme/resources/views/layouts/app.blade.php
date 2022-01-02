@@ -5,8 +5,8 @@
   {!! App::getTrackingCode('after_open_body') !!}
   @include('partials.loading')
   <div id="wrapper" class="wrapper has-animation">
-    @php do_action('get_header') @endphp
-    @include('partials.header')
+    {{-- @php do_action('get_header') @endphp
+    @include('partials.header') --}}
     <main id="main-content">
       @yield('content')
     </main>
@@ -15,10 +15,10 @@
         @include('partials.sidebar')
       </aside>
     @endif
-    @php do_action('get_footer') @endphp
-    @include('partials.footer')
+    {{-- @php do_action('get_footer') @endphp
+    @include('partials.footer') --}}
     @include('partials.javascript')
-    @php wp_footer() @endphp
+    {{-- @php wp_footer() @endphp --}}
     </div>
     {!! App::getTrackingCode('before_close_body') !!}
   </body>

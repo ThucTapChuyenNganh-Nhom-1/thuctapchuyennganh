@@ -5,7 +5,46 @@
 // }
 // var_dump(App::getMemberInfo($post));
 ?>
-<section id="info" class="info md:ml-60 mt-50">
+
+{{-- Menu --}}
+<div
+    class="menu-info w-full z-1 md:w-60 px-2 bg-blue-500 text-center fixed bottom-0 md:pt-8 md:top-0 md:left-0 h-27 md:h-screen md:border-r-2 md:border-gray-600">
+    <div class="md:relative mx-auto lg:float-right">
+        <ul class="list-none pl-5 flex justify-between flex-row md:flex-col text-center md:text-left">
+            <li class="mr-3">
+                <a href="#info"
+                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500">
+                    <span class="pt-2 pr-3 block icomoon icon-user"></span>
+                    <span class="pb-1 md:pb-0 text-base">Thông tin</span>
+                </a>
+            </li>
+            <li class="mr-3">
+                <a href="#project"
+                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500">
+                    <span class="pt-2 pr-3 block icomoon icon-folder"></span>
+                    <span class="pb-1 md:pb-0 text-base">Dự án</span>
+                </a>
+            </li>
+            <li class="mr-3">
+                <a href="#ability"
+                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500">
+                    <span class="pt-2 pr-3 block icomoon icon-trophy"></span>
+                    <span class="pb-1 md:pb-0 text-base">Năng lực</span>
+                </a>
+            </li>
+            <li class="mr-3">
+                <a href="#contact"
+                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500">
+                    <span class="pt-2 pr-3 block icomoon icon-mail-envelope-closed2"></span>
+                    <span class="pb-1 md:pb-0 text-base">Liên hệ</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+{{-- Info --}}
+<section id="info" class="info md:ml-60 -mt-40">
     <div class="container">
         <div class="pb-4 text-center">
             <h1>{{ App::getMemberInfo($post)->name }}</h1>
@@ -62,6 +101,7 @@
     </div>
 </section>
 
+<div class="h-50"></div>
 {{-- Ability --}}
 
 <?php 
@@ -109,18 +149,18 @@
     </div>
 </section>
 
+<div class="h-50"></div>
+
 {{-- Project --}}
 <?php 
     $project = App::getMemberInfo($post)->project;
 ?>
 
-<section id="project" class="mod-banner">
+<section id="project" class="mod-banner md:ml-60">
     <div class="container">
-        <hr class="w-full my-8 border-gray-300" />
         <div class="pb-4 text-center">
             <h2> Các dự án đã thực hiện </h2>
         </div>
-        <hr class="w-full my-8 border-gray-300" />
         <div class="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             
             @foreach ($project as $item2)           
@@ -148,6 +188,73 @@
                 </div>
             </div> 
             @endforeach   
+        </div>
+    </div>
+</section>
+
+<div class="h-50"></div>
+
+{{-- Contact --}}
+
+<section id="contact" class="md:ml-60 bg-footer bg-cover h-440 bg-no-repeat">
+    <div class="container pt-95">
+        <div class="pb-4 text-center">
+            <h2>
+                Liên hệ
+            </h2>
+        </div>
+        <div class="grid row-gap-6b grid-cols-2">
+            <div class="space-y-2 mx-auto ">
+                <div class="flex">
+                    <div class="text-2xl pr-6 self-center p-2">
+                        <span class="icomoon icon-icon-phone"></span>
+                    </div>
+                    <div class="contact-content">
+                        <p>Điện thoại:</p>
+                        <a href="tel:0356827189" aria-label="Our phone" title="Our phone"
+                            class="transition-colors duration-300">
+                            0356827189
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="text-2xl pr-6 self-center p-2">
+                        <span class="icomoon icon-mail-envelope-closed2"></span>
+                    </div>
+                    <div class="contact-content">
+                        <p>Email:</p>
+                        <a href="#" aria-label="Our email" title="Our email"
+                            class="transition-colors duration-300">
+                            leminhlong11b7@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="text-2xl pr-6 self-center p-2">
+                        <span class="icomoon icon-icon-map"></span>
+                    </div>
+                    <div class="contact-content">
+                        <p>Địa chỉ:</p>
+                        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer"
+                            aria-label="Our address" title="Our address"
+                            class="transition-colors duration-300">
+                            Cam Lâm, Khánh Hòa
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-2 mx-auto ">
+                <span class=" font-bold tracking-wide text-gray-900">
+                    Mạng xã hội
+                </span>
+                <div class="flex justify-around items-center mt-1 space-x-3">
+                    <a href="#" class="no-underline"><span class="icomoon icon-facebook"></span></a>
+                    <a href="#" class="no-underline"><span class="icomoon icon-twitter"></span></a>
+                    <a href="#" class="no-underline"><span class="icomoon icon-instagram"></span></a>
+                    <a href="#" class="no-underline"><span class="icomoon icon-linkedin2"></span></a>
+                </div>
+            </div>
         </div>
     </div>
 </section>

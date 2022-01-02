@@ -6,7 +6,7 @@
                 <div class="lg:w-full relative">
                     <a id="header-logo" class="navbar-brand header-logo py-5 inline-block align-middle"
                         href="<?php echo App::getLogo()['href']; ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_nhom1.png" class="w-full">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_nhom1.png" class="w-full" alt="Logo">
                     </a>
                 </div>
                 <div class="block lg:hidden">
