@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"/>
   <link rel="icon" href="<?php echo e(App::getFavicon()); ?>" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo e(App::getAppleIcon()); ?>">
   <meta name="apple-mobile-web-app-capable" content="yes">

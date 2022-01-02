@@ -15,9 +15,11 @@
 
 
                 <hr class="mb-5 border-gray-300" />
+
+                
                 <div class="flex items-center justify-center lg:justify-start ls_icon space-x-6">
                     <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" class="h-15" />
+                        <img alt="instagram link" src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" class="h-15" />
                     </a>
                     <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
                         <img alt="facebook link" src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" class="h-14" />
