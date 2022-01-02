@@ -11,7 +11,8 @@
                     </div>
                 </a>
                 
-                {!! $data->module['content'] !!}
+                <?php echo $data->module['content']; ?>
+
 
                 <hr class="mb-5 border-gray-300" />
                 <div class="flex items-center justify-center lg:justify-start ls_icon space-x-6">
@@ -31,7 +32,7 @@
                 </div>
             </div>
             <div class="col slideInRight w-full lg:w-6/12 right-banner">
-                <img src="{!! $data->module['image']->url !!}" alt="{!! $data->module['image']->alt !!}" />
+                <img src="<?php echo $data->module['image']->url; ?>" alt="<?php echo $data->module['image']->alt; ?>" />
             </div>
         </div>
     </div>

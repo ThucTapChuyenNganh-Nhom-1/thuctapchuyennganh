@@ -8,13 +8,13 @@
 <section id="info" class="info md:ml-60 mt-50">
     <div class="container">
         <div class="pb-4 text-center">
-            <h1>{{ App::getMemberInfo($post)->name }}</h1>
-            <p> {{ App::getMemberInfo($post)->des }} </p>
+            <h1><?php echo e(App::getMemberInfo($post)->name); ?></h1>
+            <p> <?php echo e(App::getMemberInfo($post)->des); ?> </p>
             <div class="info-table row justify-center">
                 <!-- nội dung trái-->
                 <div class="col md:w-4/5 lg:w-1/2">
-                    <img class="rounded-3xl" src=" {{ App::getMemberInfo($post)->avt['url'] }} "
-                        alt="{{ App::getMemberInfo($post)->avt['alt'] }}">
+                    <img class="rounded-3xl" src=" <?php echo e(App::getMemberInfo($post)->avt['url']); ?> "
+                        alt="<?php echo e(App::getMemberInfo($post)->avt['alt']); ?>">
                 </div>
                 <!-- nội dung phải -->
                 <div class="info-table-content col mt-10 md:w-4/5 lg:w-1/2">
@@ -24,7 +24,8 @@
                                 Họ tên
                             </h6>
                             <p>
-                                {{ App::getMemberInfo($post)->name }}
+                                <?php echo e(App::getMemberInfo($post)->name); ?>
+
                             </p>
                         </div>
                         <div class="col w-1/2 ">
@@ -32,7 +33,8 @@
                                 Ngày sinh
                             </h6>
                             <p>
-                                {{ App::getMemberInfo($post)->dateOB }}
+                                <?php echo e(App::getMemberInfo($post)->dateOB); ?>
+
                             </p>
                         </div>
                     </div>
@@ -42,7 +44,8 @@
                                 Giới tính
                             </h6>
                             <p>
-                                {{ App::getMemberInfo($post)->sex }}
+                                <?php echo e(App::getMemberInfo($post)->sex); ?>
+
 
                             </p>
                         </div>
@@ -51,7 +54,8 @@
                                 Sở thích
                             </h6>
                             <p>
-                                {{ App::getMemberInfo($post)->hobby }}
+                                <?php echo e(App::getMemberInfo($post)->hobby); ?>
+
 
                             </p>
                         </div>
@@ -62,7 +66,7 @@
     </div>
 </section>
 
-{{-- Ability --}}
+
 
 <?php 
     $ability = App::getMemberInfo($post)->ability;
@@ -76,7 +80,7 @@
         <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div class="ability-content grid gap-8 sm:mx-auto md:grid-cols-2 lg:max-w-full lg:grid-cols-3">            
                
-                @foreach ($ability as $item)
+                <?php $__currentLoopData = $ability; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="flex justify-center">
                     <div class="sm:mr-4">
                         <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
@@ -87,9 +91,9 @@
                         </div>
                     </div>
                     <div>
-                        {!! $item['title'] !!}               
+                        <?php echo $item['title']; ?>               
                         <ul class="p-0 grid grid-cols-2 gap-x-10">
-                            @foreach ($item['att'] as $item1)                                        
+                            <?php $__currentLoopData = $item['att']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item1): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>                                        
                             <li class="flex items-start">
                                 <span class="mr-1 mt-4">
                                     <svg class="w-5 h-5 mt-px" stroke="currentColor" viewBox="0 0 52 52">
@@ -97,19 +101,20 @@
                                             fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                                     </svg>
                                 </span>
-                                {!! $item1['attribute'] !!}
+                                <?php echo $item1['attribute']; ?>
+
                             </li>
-                            @endforeach
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </ul>
                     </div>
                 </div>
-                @endforeach
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             </div>
         </div>
     </div>
 </section>
 
-{{-- Project --}}
+
 <?php 
     $project = App::getMemberInfo($post)->project;
 ?>
@@ -123,31 +128,32 @@
         <hr class="w-full my-8 border-gray-300" />
         <div class="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             
-            @foreach ($project as $item2)           
+            <?php $__currentLoopData = $project; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item2): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>           
             <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl max-w-[410px]">                       
-                <a href="{!! $item2['link_project']['url'] !!}">
-                    <img src="{!! $item2['img_project']['url']!!}"
-                        class="object-cover w-full h-[256px]" alt="{!! $item2['img_project']['alt'] !!}" />
+                <a href="<?php echo $item2['link_project']['url']; ?>">
+                    <img src="<?php echo $item2['img_project']['url']; ?>"
+                        class="object-cover w-full h-[256px]" alt="<?php echo $item2['img_project']['alt']; ?>" />
                 </a>
 
                 <div class="p-5 border border-t-0">
                     <p class="mb-3 text-base font-semibold tracking-wide uppercase">                      
-                        <span class="text-gray-600">{!! $item2['start'] !!} </span>
+                        <span class="text-gray-600"><?php echo $item2['start']; ?> </span>
                         <span>-</span>
-                        <span class="text-gray-600"> {!! $item2['end'] !!}</span>
+                        <span class="text-gray-600"> <?php echo $item2['end']; ?></span>
                     </p>             
-                    {!! $item2['content'] !!}
+                    <?php echo $item2['content']; ?>
+
                     <div class="flex">
-                        @foreach ($item2['link_member'] as $item3)                   
-                        <a href="{!! $item3['link']['url'] !!}" class="mr-5">
-                            <img src="{!! $item3['img']['url'] !!}" alt="{!! $item3['img']['alt'] !!}"
+                        <?php $__currentLoopData = $item2['link_member']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item3): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>                   
+                        <a href="<?php echo $item3['link']['url']; ?>" class="mr-5">
+                            <img src="<?php echo $item3['img']['url']; ?>" alt="<?php echo $item3['img']['alt']; ?>"
                                 class="object-cover w-20 h-20 rounded-full shadow-sm" />
                         </a>
-                        @endforeach
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                 </div>
             </div> 
-            @endforeach   
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>   
         </div>
     </div>
 </section>
