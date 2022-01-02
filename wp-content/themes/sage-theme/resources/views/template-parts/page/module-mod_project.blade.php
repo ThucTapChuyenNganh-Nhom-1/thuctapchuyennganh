@@ -13,18 +13,20 @@
                 
                 <a href="{!! $item2->link_project->url !!}">
                     <img src="{!! $item2->img_project->url !!}"
-                        class="object-cover w-full h-[256px]" alt="{!! $item2->img_project->alt !!}" />
+                        class="object-cover w-full h-[190px]" alt="{!! $item2->img_project->alt !!}" />
                 </a>
 
                 <div class="p-5 border border-t-0">
-                    <p class="mb-3 text-base font-semibold tracking-wide uppercase">
+                    <p class="mb-3 text-base font-semibold tracking-wide uppercase max-h-[32px]">
                         
                         <span class="text-gray-600">{!! $item2->start !!} </span>
                         <span>-</span>
                         <span class="text-gray-600"> {!! $item2->end !!}</span>
                     </p>             
-                    {!! $item2->content !!}
-                    <div class="flex">
+                    <span>
+                        {!! $item2->content !!}
+                    </span>
+                    <div class="flex pt-19">
                         @foreach ($item2->link_member as $item3)                   
                         <a href="{!! $item3->link->url !!}" class="mr-5">
                             <img src="{!! $item3->img->url !!}" alt="{!! $item3->img->alt !!}"
