@@ -17,16 +17,15 @@
                 <div class="flex items-center justify-center lg:justify-start ls_icon space-x-6">
                     <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
                         <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" class="h-15" />
-
                     </a>
                     <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" class="h-14" />
+                        <img alt="facebook link" src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" class="h-14" />
                     </a>
                     <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube.svg" class="h-16" />
+                        <img alt="youtube link" src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube.svg" class="h-16" />
                     </a>
                     <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/images/github.svg" class="h-16" />
+                        <img alt="github link" src="<?php echo get_template_directory_uri(); ?>/assets/images/github.svg" class="h-16" />
                     </a>
                 </div>
             </div>

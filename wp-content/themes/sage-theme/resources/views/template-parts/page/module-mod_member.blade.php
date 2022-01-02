@@ -13,15 +13,15 @@
                         </a>
                         {!! $value->about_us!!}
                         <div class="flex items-center justify-center space-x-3">
-                            <a href="{!! $value->instagram->url!!}" rel="noreferrer" target="_blank"
+                            <a class="p-6" href="{!! $value->instagram->url!!}" rel="noreferrer" target="_blank"
                                 class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="" class="h-8" />
                             </a>
-                            <a href="{!! $value->facebook->url!!}" rel="noreferrer" target="_blank"
+                            <a class="p-6" href="{!! $value->facebook->url!!}" rel="noreferrer" target="_blank"
                                 class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="" class="h-8" />
                             </a>
-                            <a href="{!! $value->git->url!!}" rel="noreferrer" target="_blank"
+                            <a class="p-6" href="{!! $value->git->url!!}" rel="noreferrer" target="_blank"
                                 class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/githuub_blue.svg" alt="" class="h-8" />
                             </a>
