@@ -1,5 +1,5 @@
 
-<section id="project" class="mod-banner">
+<section id="project" class="mod-project">
     <div class="container">
         <hr class="w-full my-8 border-gray-300" />
         <div class="pb-4 text-center">
