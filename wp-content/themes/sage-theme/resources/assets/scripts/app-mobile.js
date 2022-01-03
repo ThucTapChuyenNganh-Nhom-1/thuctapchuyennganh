@@ -9,6 +9,7 @@ import './modules/UserAgent';
 import './modules/Header';
 import './modules/Menu';
 import './modules/Popup';
+import './modules/LoadMoreAjax';
 import './modules/SelectC8';
 
 console.log('App Mobile')
