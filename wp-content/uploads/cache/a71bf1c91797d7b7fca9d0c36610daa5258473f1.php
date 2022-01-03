@@ -11,11 +11,12 @@
                     </div>
                 </a>
                 
-                {!! $data->module['content'] !!}
+                <?php echo $data->module['content']; ?>
+
 
                 <hr class="mb-5 border-gray-300" />
 
-                {{-- chưa đổ BE list icon --}}
+                
                 <div class="flex items-center justify-center lg:justify-start ls_icon space-x-6">
                     <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
                         <img alt="instagram link" src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" class="icomoon h-15" />
@@ -32,7 +33,7 @@
                 </div>
             </div>
             <div class="col slideInRight w-full lg:w-6/12 right-banner">
-                <img src="{!! $data->module['image']->url !!}" alt="{!! $data->module['image']->alt !!}" />
+                <img src="<?php echo $data->module['image']->url; ?>" alt="<?php echo $data->module['image']->alt; ?>" />
             </div>
         </div>
     </div>
