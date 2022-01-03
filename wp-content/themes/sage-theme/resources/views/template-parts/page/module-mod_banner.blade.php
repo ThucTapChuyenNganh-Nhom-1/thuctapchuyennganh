@@ -4,7 +4,7 @@
             <div class="left-banner col pr-0 lg:p-10 slideInLeft self-center w-full lg:w-6/12">
                 <a href="/" aria-label="Go Home" title="Logo" class="inline-block mb-5">
                     <div class="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                        <svg class="icomoon cw-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                        <svg class="icomoon w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
                             <polygon strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none"
                                 points="29 13 14 29 25 29 23 39 38 23 27 23" />
                         </svg>
