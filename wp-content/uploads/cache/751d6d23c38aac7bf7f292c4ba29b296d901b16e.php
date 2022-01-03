@@ -3,7 +3,7 @@
         <div class="footer-input_mail w-2/4 text-center mx-auto text-sm hidden xl:block md:block lg:block">
             <div class="col-lg-8 offset-lg-2">
                 <div class="xl:text-2xl md:text-2xl lg:text-4xl font-bold lg:mb-10">
-                    {!! $data->module['title']!!}
+                    <h2>Tham gia danh sách gửi thư của chúng tôi để nhận tin tức &amp; xu hướng mới nhất</h2>
                 </div>
             </div>
             <div class="col-lg-6 offset-lg-3">
@@ -28,16 +28,13 @@
         </div>
         <div class="footer-list grid gap-10 row-gap-3 mb-8 sm:grid-cols-2 lg:grid-cols-4 contact">
             <div class="footer-logo sm:col-span-2 hidden lg:block">
-<<<<<<< HEAD
-                <a href="{!! $data->module['logo']->link->url!!}" aria-label="Go home" class="inline-flex items-center">
-                    <img alt="{!! $data->module['logo']->logo->alt!!}" src="{!! $data->module['logo']->logo->url!!}" />
-=======
                 <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
                     <img class="logonhom1" alt="Logo footer"  src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_nhomwhile.png" />
->>>>>>> 31a63ac407509486def719815f6f85a7c8b42d9c
                 </a>
                 <div class="mt-6 lg:max-w-sm">
-                    {!! $data->module['content']!!}
+                    <p>
+                        Nhóm thực tập sinh 5 người, đến từ Đại học Nha Trang và đang thực hiện đề tài tại 9thWonder.
+                    </p>
                 </div>
             </div>
             <div class="footer-contact text-sm">
@@ -46,24 +43,24 @@
                 </p>
                 <div class="contact_item mx-auto pb-4">
 
-                    <a href="tel:{!! $data->module['contact']->tel!!}" aria-label="Our phone" title="Our phone"
+                    <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone"
                         class="transition-colors duration-300 text-deep-purple-accent-400 text-white hover:text-deep-purple-800">
-                        Điện thoại: {!! $data->module['contact']->tel!!}
+                        Điện thoại: 850-123-5021
                     </a>
                 </div>
                 <div class="contact_item pb-4">
 
-                    <a href="mailto:{!! $data->module['contact']->mail!!}" aria-label="Our email" title="Our email"
+                    <a href="mailto:info_nhom1@gmail.com" aria-label="Our email" title="Our email"
                         class="transition-colors duration-300 text-deep-purple-accent-400 text-white hover:text-deep-purple-800">
-                        Email: {!! $data->module['contact']->mail!!}
+                        Email: info_nhom1@gmail.com
                     </a>
                 </div>
                 <div class="contact_item pb-4">
 
-                    <a href="{!! $data->module['contact']->link_address->url!!}" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer"
                         aria-label="Our address" title="Our address"
                         class="transition-colors text-white duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                        Địa chỉ: {!! $data->module['contact']->address!!}
+                        Địa chỉ: Số 2 Nguyễn Đình Chiểu, Vĩnh Thọ, Thành phố Nha Trang, Khánh Hòa
                     </a>
                 </div>
             </div>
@@ -72,14 +69,6 @@
                     Mạng xã hội
                 </span>
                 <div class="flex items-center mt-1 space-x-3 justify-center md:justify-start">
-<<<<<<< HEAD
-                    @foreach( $data->module['mxh'] as $value)
-                    <a href="{!! $value->link->url!!}" class="transition-colors duration-300 hover:text-deep-purple-accent-400 px-2">
-                        <img alt="{!! $value->image->alt!!}" src="{!! $value->image->url!!}" />
-
-                    </a>
-                    @endforeach
-=======
                     <a href="/" class="transition-colors duration-300 hover:text-deep-purple-accent-400 px-2">
                         <img alt="instagram link" class="icomoon" src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" />
 
@@ -93,23 +82,36 @@
                     <a href="/" class="transition-colors duration-300 hover:text-deep-purple-accent-400 px-2">
                         <img alt="github link" class="icomoon" src="<?php echo get_template_directory_uri(); ?>/assets/images/github.svg" />
                     </a>
->>>>>>> 31a63ac407509486def719815f6f85a7c8b42d9c
                 </div>
-                {!! $data->module['mxh_title']!!}
+                <p>
+                    Theo dõi bài viết và các dự án trên các trang mạng xã hội cùng chúng tôi.
+                </p>
             </div>
         </div>
         
         <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row p-0">
-            {!! $data->module['copyright']!!}
+            <p class="text-sm text-white">
+                © Copyright 2021 by Nhóm 1. All rights reserved.
+            </p>
             <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-                @foreach($data->module['fax'] as $value2)
                 <li>
-                    <a href="{!! $value2->link->url!!}"
-                        class="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        {!! $value2->link->title!!}
+                    <a href="/"
+                        class="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400">
+                        F.A.Q
                     </a>
                 </li>
-                @endforeach
+                <li>
+                    <a href="/"
+                        class="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400">
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="/"
+                        class="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400">
+                        Terms &amp; Conditions
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
