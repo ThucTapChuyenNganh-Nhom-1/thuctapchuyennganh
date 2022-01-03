@@ -18,18 +18,11 @@
 
                 
                 <div class="flex items-center justify-center lg:justify-start ls_icon space-x-6">
-                    <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img alt="instagram link" src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" class="h-15" />
+                    <?php $__currentLoopData = $data->module['link']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    <a href="<?php echo $value->link->url; ?>" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
+                        <img alt="<?php echo $value->image->alt; ?>" src="<?php echo $value->image->url; ?>" class="h-15" />
                     </a>
-                    <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img alt="facebook link" src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" class="h-14" />
-                    </a>
-                    <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img alt="youtube link" src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube.svg" class="h-16" />
-                    </a>
-                    <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img alt="github link" src="<?php echo get_template_directory_uri(); ?>/assets/images/github.svg" class="h-16" />
-                    </a>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </div>
             </div>
             <div class="col slideInRight w-full lg:w-6/12 right-banner">

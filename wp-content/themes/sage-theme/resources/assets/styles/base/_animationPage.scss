@@ -88,3 +88,23 @@
     }
   }
 }
+
+.info-table img {
+  position: relative;
+  animation: ml 3s;
+}
+
+@keyframes ml {
+  from {left: -100px;}
+  to {left: 0px;}
+}
+
+.info-table-content{
+  position: relative;
+  animation: mr 3s;
+}
+
+@keyframes mr {
+  from {right: -100px;}
+  to {right: 0px;}
+}
