@@ -11,21 +11,22 @@
                     </div>
                 </a>
                 
-                {!! $data->module['content'] !!}
+                <?php echo $data->module['content']; ?>
+
 
                 <hr class="mb-5 border-gray-300" />
 
-                {{-- chưa đổ BE list icon --}}
+                
                 <div class="flex items-center justify-center lg:justify-start ls_icon space-x-6">
-                    @foreach($data->module['link'] as $value)
-                    <a href="{!! $value->link->url !!}" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img alt="{!! $value->image->alt !!}" src="{!! $value->image->url !!}" class="h-15" />
+                    <?php $__currentLoopData = $data->module['link']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    <a href="<?php echo $value->link->url; ?>" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
+                        <img alt="<?php echo $value->image->alt; ?>" src="<?php echo $value->image->url; ?>" class="h-15" />
                     </a>
-                    @endforeach
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </div>
             </div>
             <div class="col slideInRight w-full lg:w-6/12 right-banner">
-                <img src="{!! $data->module['image']->url !!}" alt="{!! $data->module['image']->alt !!}" />
+                <img src="<?php echo $data->module['image']->url; ?>" alt="<?php echo $data->module['image']->alt; ?>" />
             </div>
         </div>
     </div>

@@ -5,8 +5,8 @@
                 class="col w-full down_lg:flex down_lg:flex-wrap lg:w-1/5 header-mobile relative justify-between items-center">
                 <div class="lg:w-full relative">
                     <a id="header-logo" class="navbar-brand header-logo py-5 inline-block align-middle"
-                        href="{!! App::getLogo()['href'] !!}">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_nhom1.png" class="w-full" alt="Logo">
+                        href="{!! $data->module['logo']->link->url!!}">
+                        <img src="{!! $data->module['logo']->logo->url!!}" class="w-full" alt="{!! $data->module['logo']->logo->alt!!}">
                     </a>
                 </div>
                 <div class="block lg:hidden">

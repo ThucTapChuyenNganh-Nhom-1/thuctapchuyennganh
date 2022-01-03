@@ -119,6 +119,7 @@ class App extends Controller
         $post->avt = get_field('personal_image', $post->ID);
         $post->ability = get_field('ability', $post->ID);
         $post->project = get_field('project', $post->ID);
+        $post->contact = get_field('contact', $post->ID);
              
         return $post;
         

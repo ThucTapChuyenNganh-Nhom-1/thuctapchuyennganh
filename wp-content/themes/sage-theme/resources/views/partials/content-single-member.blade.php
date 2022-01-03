@@ -196,6 +196,9 @@
 
 {{-- Contact --}}
 
+<?php 
+    $contact = App::getMemberInfo($post)->contact;
+?>
 <section id="contact" class="md:ml-60 bg-footer bg-cover h-440 bg-no-repeat">
     <div class="container pt-95">
         <div class="pb-4 text-center">
@@ -211,9 +214,9 @@
                     </div>
                     <div class="contact-content">
                         <p>Điện thoại:</p>
-                        <a href="tel:0356827189" aria-label="Our phone" title="Our phone"
+                        <a href="tel:{!! $contact['tel']!!}" aria-label="Our phone" title="Our phone"
                             class="transition-colors duration-300">
-                            0356827189
+                            {!! $contact['tel']!!}
                         </a>
                     </div>
                 </div>
@@ -224,9 +227,9 @@
                     </div>
                     <div class="contact-content">
                         <p>Email:</p>
-                        <a href="#" aria-label="Our email" title="Our email"
+                        <a href="mailto:{!! $contact['mail']!!}" aria-label="Our email" title="Our email"
                             class="transition-colors duration-300">
-                            leminhlong11b7@gmail.com
+                            {!! $contact['mail']!!}
                         </a>
                     </div>
                 </div>
@@ -236,10 +239,10 @@
                     </div>
                     <div class="contact-content">
                         <p>Địa chỉ:</p>
-                        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer"
+                        <a href="{!! $contact['link_address']['url']!!}" target="_blank" rel="noopener noreferrer"
                             aria-label="Our address" title="Our address"
                             class="transition-colors duration-300">
-                            Cam Lâm, Khánh Hòa
+                            {!! $contact['address']!!}
                         </a>
                     </div>
                 </div>
@@ -249,10 +252,11 @@
                     Mạng xã hội
                 </span>
                 <div class="flex justify-around items-center mt-1 space-x-3">
-                    <a href="#" class="no-underline"><span class="icomoon icon-facebook"></span></a>
-                    <a href="#" class="no-underline"><span class="icomoon icon-twitter"></span></a>
-                    <a href="#" class="no-underline"><span class="icomoon icon-instagram"></span></a>
-                    <a href="#" class="no-underline"><span class="icomoon icon-linkedin2"></span></a>
+                    @foreach($contact['mxh'] as $item5)
+                    <a href="{!! $item5['link']['url'] !!}" class="no-underline px-5">
+                        <img alt="{!! $item5['image']['alt'] !!}" src="{!! $item5['image']['alt'] !!} "class="h-15"/>
+                    </a>
+                    @endforeach
                 </div>
             </div>
         </div>

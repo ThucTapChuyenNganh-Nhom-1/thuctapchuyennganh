@@ -15,17 +15,17 @@
                         <?php echo $value->about_us; ?>
 
                         <div class="flex items-center justify-center space-x-3">
-                            <a href="<?php echo $value->instagram->url; ?>" rel="noreferrer" target="_blank"
+                            <a class="p-6" href="<?php echo $value->instagram->url; ?>" rel="noreferrer" target="_blank"
                                 class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="" class="h-8" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="instagram link" class="h-8" />
                             </a>
-                            <a href="<?php echo $value->facebook->url; ?>" rel="noreferrer" target="_blank"
+                            <a class="p-6" href="<?php echo $value->facebook->url; ?>" rel="noreferrer" target="_blank"
                                 class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="" class="h-8" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="facebook link" class="h-8" />
                             </a>
-                            <a href="<?php echo $value->git->url; ?>" rel="noreferrer" target="_blank"
+                            <a class="p-6" href="<?php echo $value->git->url; ?>" rel="noreferrer" target="_blank"
                                 class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/githuub_blue.svg" alt="" class="h-8" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/githuub_blue.svg" alt="github link" class="h-8" />
                             </a>
                         </div>
                     </div>

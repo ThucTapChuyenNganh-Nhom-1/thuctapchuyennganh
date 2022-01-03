@@ -6,8 +6,7 @@
 
   <?php echo $__env->make('partials.loading', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
   <div id="wrapper" class="wrapper has-animation">
-    <?php do_action('get_header') ?>
-    <?php echo $__env->make('partials.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    
     <main id="main-content">
       <?php echo $__env->yieldContent('content'); ?>
     </main>
@@ -16,10 +15,9 @@
         <?php echo $__env->make('partials.sidebar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
       </aside>
     <?php endif; ?>
-    <?php do_action('get_footer') ?>
-    <?php echo $__env->make('partials.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    
     <?php echo $__env->make('partials.javascript', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-    <?php wp_footer() ?>
+    
     </div>
     <?php echo App::getTrackingCode('before_close_body'); ?>
 
