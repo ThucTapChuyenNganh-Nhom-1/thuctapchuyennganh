@@ -1,4 +1,4 @@
-<section id="project" class="mod-project">
+<section class="mod-project">
     <div class="container">
         <hr class="w-full my-8 border-gray-300" />
         <div class="pb-4 text-center">
@@ -10,7 +10,7 @@
                 <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl max-w-[410px]">
 
                     <a href="{!! $item2->link_project->url !!}">
-                        <img src="{!! $item2->img_project->url !!}" class="object-cover w-full h-[190px]"
+                        <img src="{!! $item2->img_project->url !!}" class="object-cover project w-full h-[190px] zoom"
                             alt="{!! $item2->img_project->alt !!}" />
                     </a>
 
@@ -24,11 +24,11 @@
                         <span>
                             {!! $item2->content !!}
                         </span>
-                        <div class="flex pt-19">
+                        <div class="afmp flex pt-19">
                             @foreach ($item2->link_member as $item3)
                                 <a href="{!! $item3->link->url !!}" class="mr-5">
                                     <img src="{!! $item3->img->url !!}" alt="{!! $item3->img->alt !!}"
-                                        class="object-cover w-20 h-20 rounded-full shadow-sm" />
+                                        class="object-cover member-project w-20 h-20 rounded-full shadow-sm" />
                                 </a>
                             @endforeach
                         </div>

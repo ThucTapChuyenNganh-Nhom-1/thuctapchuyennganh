@@ -25,7 +25,7 @@
                             <?php echo $item2->content; ?>
 
                         </span>
-                        <div class="flex pt-19">
+                        <div class="afmp flex pt-19">
                             <?php $__currentLoopData = $item2->link_member; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item3): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <a href="<?php echo $item3->link->url; ?>" class="mr-5">
                                     <img src="<?php echo $item3->img->url; ?>" alt="<?php echo $item3->img->alt; ?>"

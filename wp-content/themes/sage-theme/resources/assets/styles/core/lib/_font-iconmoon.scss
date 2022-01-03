@@ -1,11 +1,11 @@
 // stylelint-disable
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?k0cskd');
-  src:  url('../fonts/icomoon.eot?k0cskd#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?k0cskd') format('truetype'),
-    url('../fonts/icomoon.woff?k0cskd') format('woff'),
-    url('../fonts/icomoon.svg?k0cskd#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?oh5j3j');
+  src:  url('../fonts/icomoon.eot?oh5j3j#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?oh5j3j') format('truetype'),
+    url('../fonts/icomoon.woff?oh5j3j') format('woff'),
+    url('../fonts/icomoon.svg?oh5j3j#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -50,8 +50,14 @@
 .icon-arrow-thin-left:before {
   content: "\e918";
 }
+.icon-home:before {
+  content: "\e935";
+}
 .icon-folder:before {
   content: "\e934";
+}
+.icon-mobile:before {
+  content: "\e958";
 }
 .icon-trophy:before {
   content: "\e99e";
@@ -244,4 +250,5 @@
 .icon-chevron-up:before {
   content: "\e90d";
 }
+
 

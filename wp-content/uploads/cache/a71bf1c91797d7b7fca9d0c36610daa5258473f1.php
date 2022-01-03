@@ -4,7 +4,7 @@
             <div class="left-banner col pr-0 lg:p-10 slideInLeft self-center w-full lg:w-6/12">
                 <a href="/" aria-label="Go Home" title="Logo" class="inline-block mb-5">
                     <div class="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                        <svg class="icomoon cw-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                        <svg class="icomoon w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
                             <polygon strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none"
                                 points="29 13 14 29 25 29 23 39 38 23 27 23" />
                         </svg>
@@ -18,22 +18,15 @@
 
                 
                 <div class="flex items-center justify-center lg:justify-start ls_icon space-x-6">
-                    <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img alt="instagram link" src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" class="icomoon h-15" />
+                    <?php $__currentLoopData = $data->module['link']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                    <a href="<?php echo $value->link->url; ?>" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
+                        <img alt="<?php echo $value->image->alt; ?>" src="<?php echo $value->image->url; ?>" class="icomoon h-15" />
                     </a>
-                    <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img alt="facebook link" src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" class="icomoon h-14" />
-                    </a>
-                    <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img alt="youtube link" src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube.svg" class="icomoon h-16" />
-                    </a>
-                    <a href="/" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img alt="github link" src="<?php echo get_template_directory_uri(); ?>/assets/images/github.svg" class="icomoon h-16" />
-                    </a>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </div>
             </div>
             <div class="col slideInRight w-full lg:w-6/12 right-banner">
-                <img src="<?php echo $data->module['image']->url; ?>" alt="<?php echo $data->module['image']->alt; ?>" />
+                <img src="<?php echo $data->module['image']->url; ?>" class="imgbh" alt="<?php echo $data->module['image']->alt; ?>" />
             </div>
         </div>
     </div>

@@ -12,29 +12,36 @@
     <div class="md:relative mx-auto lg:float-right">
         <ul class="list-none pl-5 flex justify-between flex-row md:flex-col text-center md:text-left">
             <li class="mr-3">
+                <a href="home"
+                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500 third after ">
+                    <span class="pt-2 pr-3 block icomoon icon-home"></span>
+                    <span class="pb-1 md:pb-0 text-base">Trang chủ</span>
+                </a>
+            </li>
+            <li class="mr-3">
                 <a href="#info"
-                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500">
+                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500 third after">
                     <span class="pt-2 pr-3 block icomoon icon-user"></span>
                     <span class="pb-1 md:pb-0 text-base">Thông tin</span>
                 </a>
             </li>
             <li class="mr-3">
                 <a href="#project"
-                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500">
+                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500 third after">
                     <span class="pt-2 pr-3 block icomoon icon-folder"></span>
                     <span class="pb-1 md:pb-0 text-base">Dự án</span>
                 </a>
             </li>
             <li class="mr-3">
                 <a href="#ability"
-                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500">
+                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500 third after">
                     <span class="pt-2 pr-3 block icomoon icon-trophy"></span>
                     <span class="pb-1 md:pb-0 text-base">Năng lực</span>
                 </a>
             </li>
             <li class="mr-3">
                 <a href="#contact"
-                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500">
+                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500 third after">
                     <span class="pt-2 pr-3 block icomoon icon-mail-envelope-closed2"></span>
                     <span class="pb-1 md:pb-0 text-base">Liên hệ</span>
                 </a>
@@ -46,17 +53,17 @@
 {{-- Info --}}
 <section id="info" class="info md:ml-60 -mt-40">
     <div class="container">
-        <div class="pb-4 text-center">
+        <div class="pb-10 text-center">
             <h1>{{ App::getMemberInfo($post)->name }}</h1>
             <p> {{ App::getMemberInfo($post)->des }} </p>
-            <div class="info-table row justify-center">
+            <div class="info-table row justify-center ">
                 <!-- nội dung trái-->
-                <div class="col md:w-4/5 lg:w-1/2">
+                <div class="col md:w-4/5 lg:w-1/2 fadeInLeft">
                     <img class="rounded-3xl" src=" {{ App::getMemberInfo($post)->avt['url'] }} "
                         alt="{{ App::getMemberInfo($post)->avt['alt'] }}">
                 </div>
                 <!-- nội dung phải -->
-                <div class="info-table-content col mt-10 md:w-4/5 lg:w-1/2">
+                <div class="info-table-content col mt-10 md:w-4/5 lg:w-1/2 fadeInRight">
                     <div class="row">
                         <div class="col w-1/2">
                             <h6>
@@ -110,10 +117,10 @@
 
 <section id="ability" class="md:ml-60">
     <div class="container">
-        <div class="pb-4 text-center">
+        <div class="pb-10 text-center">
             <h2> Năng lực </h2>    
         </div>
-        <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
             <div class="ability-content grid gap-8 sm:mx-auto md:grid-cols-2 lg:max-w-full lg:grid-cols-3">            
                
                 @foreach ($ability as $item)
@@ -158,7 +165,7 @@
 
 <section id="project" class="mod-banner md:ml-60">
     <div class="container">
-        <div class="pb-4 text-center">
+        <div class="pb-10 text-center">
             <h2> Các dự án đã thực hiện </h2>
         </div>
         <div class="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -167,7 +174,7 @@
             <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl max-w-[410px]">                       
                 <a href="{!! $item2['link_project']['url'] !!}">
                     <img src="{!! $item2['img_project']['url']!!}"
-                        class="object-cover w-full h-[256px]" alt="{!! $item2['img_project']['alt'] !!}" />
+                        class="object-cover project w-full h-[256px] zoom" alt="{!! $item2['img_project']['alt'] !!}" />
                 </a>
 
                 <div class="p-5 border border-t-0">
@@ -177,11 +184,11 @@
                         <span class="text-gray-600"> {!! $item2['end'] !!}</span>
                     </p>             
                     {!! $item2['content'] !!}
-                    <div class="flex">
+                    <div class="flex project-a afmp">
                         @foreach ($item2['link_member'] as $item3)                   
                         <a href="{!! $item3['link']['url'] !!}" class="mr-5">
                             <img src="{!! $item3['img']['url'] !!}" alt="{!! $item3['img']['alt'] !!}"
-                                class="object-cover w-20 h-20 rounded-full shadow-sm" />
+                                class="object-cover member-project w-20 h-20 rounded-full shadow-sm" />
                         </a>
                         @endforeach
                     </div>
@@ -192,8 +199,6 @@
     </div>
 </section>
 
-<div class="h-50"></div>
-
 {{-- Contact --}}
 
 <?php 
@@ -201,7 +206,7 @@
 ?>
 <section id="contact" class="md:ml-60 bg-footer bg-cover h-440 bg-no-repeat">
     <div class="container pt-95">
-        <div class="pb-4 text-center">
+        <div class="pb-10 text-center">
             <h2>
                 Liên hệ
             </h2>
@@ -210,7 +215,7 @@
             <div class="space-y-2 mx-auto ">
                 <div class="flex">
                     <div class="text-2xl pr-6 self-center p-2">
-                        <span class="icomoon icon-icon-phone"></span>
+                        <span class="icomoon icon-mobile"></span>
                     </div>
                     <div class="contact-content">
                         <p>Điện thoại:</p>
@@ -254,7 +259,7 @@
                 <div class="flex justify-around items-center mt-1 space-x-3">
                     @foreach($contact['mxh'] as $item5)
                     <a href="{!! $item5['link']['url'] !!}" class="no-underline px-5">
-                        <img alt="{!! $item5['image']['alt'] !!}" src="{!! $item5['image']['alt'] !!} "class="h-15"/>
+                        <img alt="{!! $item5['image']['alt'] !!}" src="{!! $item5['image']['alt'] !!} "class="iconfooter h-15"/>
                     </a>
                     @endforeach
                 </div>

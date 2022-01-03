@@ -1,12 +1,12 @@
-<header id="header" class="module header w-full top-0 left-0 fixed z-200 down_lg:overflow-hidden">
+<header id="header" class="module header w-full top-0 left-0 fixed z-200 down_lg:overflow-hidden fadeInDown">
     <div class="container">
         <nav class="row navbar items-center">
             <div
                 class="col w-full down_lg:flex down_lg:flex-wrap lg:w-1/5 header-mobile relative justify-between items-center">
                 <div class="lg:w-full relative">
                     <a id="header-logo" class="navbar-brand header-logo py-5 inline-block align-middle"
-                        href="<?php echo App::getLogo()['href']; ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_nhom1.png" class="w-full" alt="Logo">
+                        href="<?php echo $data->module['logo']->link->url; ?>">
+                        <img src="<?php echo $data->module['logo']->logo->url; ?>" class="logonhom1 w-full" alt="<?php echo $data->module['logo']->logo->alt; ?>">
                     </a>
                 </div>
                 <div class="block lg:hidden">
@@ -30,14 +30,13 @@
                         <a class="block py-9 lg:p-9 no-underline text-black" href="#">TRANG CHỦ</a>
                     </li>
                     <li class="menu-item mb-0">
-                        <a class="block py-9 lg:p-9 no-underline text-black" href="#">GIỚI THIỆU</a>
+                        <a class="block py-9 lg:p-9 no-underline text-black" href="#about-us">GIỚI THIỆU</a>
                     </li>
                     <li class="menu-item mb-0">
-                        <a class="block py-9 lg:p-9 no-underline text-black" href="#">DỰ ÁN</a>
+                        <a class="block py-9 lg:p-9 no-underline text-black" href="#project-home">DỰ ÁN</a>
                     </li>
-
                     <li class="active menu-item mb-0">
-                        <a class="block py-9 lg:p-9 no-underline text-black" href="#">LIÊN HỆ</a>
+                        <a class="block py-9 lg:p-9 no-underline text-black" href="#contact-home">LIÊN HỆ</a>
                     </li>
                 </ul>
             </div>

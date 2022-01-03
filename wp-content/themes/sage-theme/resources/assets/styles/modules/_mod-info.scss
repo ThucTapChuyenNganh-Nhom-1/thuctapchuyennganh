@@ -1,8 +1,8 @@
 #info{
     p{
-        @apply md:text-lg lg:text-xl text-gray-700 text-justify
+        @apply md:text-lg lg:text-xl text-gray-700 text-justify mb-10
     }
     h6{
-        @apply md:text-lg mb-2 font-semibold leading-5
+        @apply md:text-lg mb-2 font-semibold leading-5 text-left
     }
 }

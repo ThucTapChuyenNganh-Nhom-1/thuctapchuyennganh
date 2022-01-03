@@ -79,7 +79,7 @@ module.exports = {
     container: false,
     objectFit: false,
     objectPosition: false,
-    overscrollBehavior: false,
+    overscrollBehavior: true,
     gridTemplateColumns: true,
     gridColumn: true,
     gridColumnStart: true,
