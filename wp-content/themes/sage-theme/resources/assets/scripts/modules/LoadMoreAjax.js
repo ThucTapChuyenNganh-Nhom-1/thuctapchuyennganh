@@ -7,7 +7,7 @@ export default class LoadMoreAjax {
         $('.btn-loadmore').on('click', function (e) {
             var currentPage = $('.btn-loadmore').attr('data-page');
             $.ajax({
-                type: 'member',
+                type: 'post',
                 dataType: 'json',
                 url: '/wp-admin/admin-ajax.php',
                 data: {
