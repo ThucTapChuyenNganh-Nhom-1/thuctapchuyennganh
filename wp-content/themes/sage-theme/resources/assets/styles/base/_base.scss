@@ -5,6 +5,11 @@
   html {
     @apply m-0;
   }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
   html,
   body{
     @apply overflow-x-hidden bg-white;

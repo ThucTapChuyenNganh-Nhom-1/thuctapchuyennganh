@@ -56,14 +56,14 @@
         <div class="pb-10 text-center">
             <h1>{{ App::getMemberInfo($post)->name }}</h1>
             <p> {{ App::getMemberInfo($post)->des }} </p>
-            <div class="info-table row justify-center">
+            <div class="info-table row justify-center ">
                 <!-- nội dung trái-->
-                <div class="col md:w-4/5 lg:w-1/2">
+                <div class="col md:w-4/5 lg:w-1/2 fadeInLeft">
                     <img class="rounded-3xl" src=" {{ App::getMemberInfo($post)->avt['url'] }} "
                         alt="{{ App::getMemberInfo($post)->avt['alt'] }}">
                 </div>
                 <!-- nội dung phải -->
-                <div class="info-table-content col mt-10 md:w-4/5 lg:w-1/2">
+                <div class="info-table-content col mt-10 md:w-4/5 lg:w-1/2 fadeInRight">
                     <div class="row">
                         <div class="col w-1/2">
                             <h6>

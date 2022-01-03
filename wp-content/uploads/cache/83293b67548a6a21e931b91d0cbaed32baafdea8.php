@@ -5,7 +5,7 @@
             <div class="max-w-[312px]">
                 <div
                     class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
-                    <img class="object-cover w-full h-[224] md:h-[256px] xl:h-[320px]" src="<?php echo $value->image->url; ?>" alt="Person" />
+                    <img class="object-cover imgmb w-full h-[224] md:h-[256px] xl:h-[320px]" src="<?php echo $value->image->url; ?>" alt="Person" />
                     <div
                         class="member-info absolute inset-0 flex flex-col justify-center px-10 py-8 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                         <a href="<?php echo $value->link_member->url; ?>">
@@ -17,15 +17,15 @@
                         <div class="flex items-center justify-center space-x-3">
                             <a class="p-6" href="<?php echo $value->instagram->url; ?>" rel="noreferrer" target="_blank"
                                 class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="instagram link" class="h-8" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="instagram link" class="icomoon h-8" />
                             </a>
                             <a class="p-6" href="<?php echo $value->facebook->url; ?>" rel="noreferrer" target="_blank"
                                 class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="facebook link" class="h-8" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="facebook link" class="icomoon h-8" />
                             </a>
                             <a class="p-6" href="<?php echo $value->git->url; ?>" rel="noreferrer" target="_blank"
                                 class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/githuub_blue.svg" alt="github link" class="h-8" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/githuub_blue.svg" alt="github link" class="icomoon h-8" />
                             </a>
                         </div>
                     </div>

@@ -56,14 +56,14 @@
         <div class="pb-10 text-center">
             <h1><?php echo e(App::getMemberInfo($post)->name); ?></h1>
             <p> <?php echo e(App::getMemberInfo($post)->des); ?> </p>
-            <div class="info-table row justify-center">
+            <div class="info-table row justify-center ">
                 <!-- nội dung trái-->
-                <div class="col md:w-4/5 lg:w-1/2">
+                <div class="col md:w-4/5 lg:w-1/2 fadeInLeft">
                     <img class="rounded-3xl" src=" <?php echo e(App::getMemberInfo($post)->avt['url']); ?> "
                         alt="<?php echo e(App::getMemberInfo($post)->avt['alt']); ?>">
                 </div>
                 <!-- nội dung phải -->
-                <div class="info-table-content col mt-10 md:w-4/5 lg:w-1/2">
+                <div class="info-table-content col mt-10 md:w-4/5 lg:w-1/2 fadeInRight">
                     <div class="row">
                         <div class="col w-1/2">
                             <h6>
@@ -179,7 +179,7 @@
             <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl max-w-[410px]">                       
                 <a href="<?php echo $item2['link_project']['url']; ?>">
                     <img src="<?php echo $item2['img_project']['url']; ?>"
-                        class="object-cover w-full h-[256px] zoom" alt="<?php echo $item2['img_project']['alt']; ?>" />
+                        class="object-cover project w-full h-[256px] zoom" alt="<?php echo $item2['img_project']['alt']; ?>" />
                 </a>
 
                 <div class="p-5 border border-t-0">
@@ -190,11 +190,11 @@
                     </p>             
                     <?php echo $item2['content']; ?>
 
-                    <div class="flex project-a">
+                    <div class="flex project-a afmp">
                         <?php $__currentLoopData = $item2['link_member']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item3): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>                   
                         <a href="<?php echo $item3['link']['url']; ?>" class="mr-5">
                             <img src="<?php echo $item3['img']['url']; ?>" alt="<?php echo $item3['img']['alt']; ?>"
-                                class="object-cover w-20 h-20 rounded-full shadow-sm" />
+                                class="object-cover member-project w-20 h-20 rounded-full shadow-sm" />
                         </a>
                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
@@ -268,7 +268,7 @@
                 <div class="flex justify-around items-center mt-1 space-x-3">
                     <?php $__currentLoopData = $contact['mxh']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item5): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <a href="<?php echo $item5['link']['url']; ?>" class="no-underline px-5">
-                        <img alt="<?php echo $item5['image']['alt']; ?>" src="<?php echo $item5['image']['alt']; ?> "class="h-15"/>
+                        <img alt="<?php echo $item5['image']['alt']; ?>" src="<?php echo $item5['image']['alt']; ?> "class="iconfooter h-15"/>
                     </a>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </div>
