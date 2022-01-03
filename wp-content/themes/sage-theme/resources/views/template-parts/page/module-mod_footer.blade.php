@@ -10,14 +10,14 @@
                 <form id="search" action="#" method="GET">
                     <div class="flex justify-center">
                         <div class="">
-                            <fieldset class=" fieldset w-[160px] md:w-[320px] text-sm lg:text-xl">
+                            <fieldset class="w-[160px] md:w-[320px] text-sm lg:text-xl">
                                 <label class="hidden" for="email">Email</label>
                                 <input id="email" type="email" name="email" class="email rounded-3xl" placeholder="Địa chỉ Email..."
                                     autoComplete="on" required />
                             </fieldset>
                         </div>
                         <div class="">
-                            <fieldset class="fieldset w-[80px] md:w-[176px] ml-3 text-sm lg:text-xl">
+                            <fieldset class="w-[80px] md:w-[176px] ml-3 text-sm lg:text-xl">
                                 <button type="submit" class="main-button">Gửi Ngay <i
                                         class="fa fa-angle-right"></i></button>
                             </fieldset>
@@ -28,13 +28,8 @@
         </div>
         <div class="footer-list grid gap-10 row-gap-3 mb-8 sm:grid-cols-2 lg:grid-cols-4 contact">
             <div class="footer-logo sm:col-span-2 hidden lg:block">
-<<<<<<< HEAD
                 <a href="{!! $data->module['logo']->link->url!!}" aria-label="Go home" class="inline-flex items-center">
                     <img alt="{!! $data->module['logo']->logo->alt!!}" src="{!! $data->module['logo']->logo->url!!}" />
-=======
-                <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-                    <img class="logonhom1" alt="Logo footer"  src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_nhomwhile.png" />
->>>>>>> 31a63ac407509486def719815f6f85a7c8b42d9c
                 </a>
                 <div class="mt-6 lg:max-w-sm">
                     {!! $data->module['content']!!}
@@ -72,28 +67,12 @@
                     Mạng xã hội
                 </span>
                 <div class="flex items-center mt-1 space-x-3 justify-center md:justify-start">
-<<<<<<< HEAD
                     @foreach( $data->module['mxh'] as $value)
                     <a href="{!! $value->link->url!!}" class="transition-colors duration-300 hover:text-deep-purple-accent-400 px-2">
                         <img alt="{!! $value->image->alt!!}" src="{!! $value->image->url!!}" />
 
                     </a>
                     @endforeach
-=======
-                    <a href="/" class="transition-colors duration-300 hover:text-deep-purple-accent-400 px-2">
-                        <img alt="instagram link" class="icomoon" src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" />
-
-                    </a>
-                    <a href="/" class="transition-colors duration-300 hover:text-deep-purple-accent-400 px-2">
-                        <img alt="facebook link" class="icomoon" src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" />
-                    </a>
-                    <a href="/" class="transition-colors duration-300 hover:text-deep-purple-accent-400 px-2">
-                        <img alt="youtube link" class="icomoon" src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube.svg" />
-                    </a>
-                    <a href="/" class="transition-colors duration-300 hover:text-deep-purple-accent-400 px-2">
-                        <img alt="github link" class="icomoon" src="<?php echo get_template_directory_uri(); ?>/assets/images/github.svg" />
-                    </a>
->>>>>>> 31a63ac407509486def719815f6f85a7c8b42d9c
                 </div>
                 {!! $data->module['mxh_title']!!}
             </div>
