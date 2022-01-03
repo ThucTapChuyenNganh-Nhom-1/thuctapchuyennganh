@@ -174,7 +174,7 @@
             <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl max-w-[410px]">                       
                 <a href="{!! $item2['link_project']['url'] !!}">
                     <img src="{!! $item2['img_project']['url']!!}"
-                        class="object-cover w-full h-[256px] zoom" alt="{!! $item2['img_project']['alt'] !!}" />
+                        class="object-cover project w-full h-[256px] zoom" alt="{!! $item2['img_project']['alt'] !!}" />
                 </a>
 
                 <div class="p-5 border border-t-0">
@@ -184,11 +184,11 @@
                         <span class="text-gray-600"> {!! $item2['end'] !!}</span>
                     </p>             
                     {!! $item2['content'] !!}
-                    <div class="flex project-a">
+                    <div class="flex project-a afmp">
                         @foreach ($item2['link_member'] as $item3)                   
                         <a href="{!! $item3['link']['url'] !!}" class="mr-5">
                             <img src="{!! $item3['img']['url'] !!}" alt="{!! $item3['img']['alt'] !!}"
-                                class="object-cover w-20 h-20 rounded-full shadow-sm" />
+                                class="object-cover member-project w-20 h-20 rounded-full shadow-sm" />
                         </a>
                         @endforeach
                     </div>
@@ -259,7 +259,7 @@
                 <div class="flex justify-around items-center mt-1 space-x-3">
                     @foreach($contact['mxh'] as $item5)
                     <a href="{!! $item5['link']['url'] !!}" class="no-underline px-5">
-                        <img alt="{!! $item5['image']['alt'] !!}" src="{!! $item5['image']['alt'] !!} "class="h-15"/>
+                        <img alt="{!! $item5['image']['alt'] !!}" src="{!! $item5['image']['alt'] !!} "class="iconfooter h-15"/>
                     </a>
                     @endforeach
                 </div>

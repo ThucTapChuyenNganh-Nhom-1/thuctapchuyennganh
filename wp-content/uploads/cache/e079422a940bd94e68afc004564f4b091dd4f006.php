@@ -5,7 +5,7 @@
             <div class="max-w-[312px]">
                 <div
                     class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
-                    <img class="object-cover w-full h-[224] md:h-[256px] xl:h-[320px]" src="<?php echo $value->image->url; ?>" alt="Person" />
+                    <img class="object-cover imgmb w-full h-[224] md:h-[256px] xl:h-[320px]" src="<?php echo $value->image->url; ?>" alt="Person" />
                     <div
                         class="member-info absolute inset-0 flex flex-col justify-center px-10 py-8 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                         <a href="<?php echo $value->link_member->url; ?>">

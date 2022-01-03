@@ -10,14 +10,14 @@
                 <form id="search" action="#" method="GET">
                     <div class="flex justify-center">
                         <div class="">
-                            <fieldset class="w-[160px] md:w-[320px] text-sm lg:text-xl">
+                            <fieldset class="fieldset w-[160px] md:w-[320px] text-sm lg:text-xl">
                                 <label class="hidden" for="email">Email</label>
                                 <input id="email" type="email" name="email" class="email rounded-3xl" placeholder="Địa chỉ Email..."
                                     autoComplete="on" required />
                             </fieldset>
                         </div>
                         <div class="">
-                            <fieldset class="w-[80px] md:w-[176px] ml-3 text-sm lg:text-xl">
+                            <fieldset class="fieldset w-[80px] md:w-[176px] ml-3 text-sm lg:text-xl">
                                 <button type="submit" class="main-button">Gửi Ngay <i
                                         class="fa fa-angle-right"></i></button>
                             </fieldset>
@@ -29,7 +29,7 @@
         <div class="footer-list grid gap-10 row-gap-3 mb-8 sm:grid-cols-2 lg:grid-cols-4 contact">
             <div class="footer-logo sm:col-span-2 hidden lg:block">
                 <a href="{!! $data->module['logo']->link->url!!}" aria-label="Go home" class="inline-flex items-center">
-                    <img alt="{!! $data->module['logo']->logo->alt!!}" src="{!! $data->module['logo']->logo->url!!}" />
+                    <img alt="{!! $data->module['logo']->logo->alt!!}" class="logof" src="{!! $data->module['logo']->logo->url!!}" />
                 </a>
                 <div class="mt-6 lg:max-w-sm">
                     {!! $data->module['content']!!}
@@ -68,8 +68,8 @@
                 </span>
                 <div class="flex items-center mt-1 space-x-3 justify-center md:justify-start">
                     @foreach( $data->module['mxh'] as $value)
-                    <a href="{!! $value->link->url!!}" class="transition-colors duration-300 hover:text-deep-purple-accent-400 px-2">
-                        <img alt="{!! $value->image->alt!!}" src="{!! $value->image->url!!}" />
+                    <a href="{!! $value->link->url!!}" class="transition-colors  duration-300 hover:text-deep-purple-accent-400 px-2">
+                        <img alt="{!! $value->image->alt!!}" class="iconfooter" src="{!! $value->image->url!!}" />
 
                     </a>
                     @endforeach
