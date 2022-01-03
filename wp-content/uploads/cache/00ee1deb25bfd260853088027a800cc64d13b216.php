@@ -28,3 +28,7 @@
         <button class="btn btn- mx-auto block btn-loadmore mt-10" data-page="2">Xem thêm</button>
     </div>
 </section>
+
+<?php 
+    // var_dump($data->member->posts);
+?>

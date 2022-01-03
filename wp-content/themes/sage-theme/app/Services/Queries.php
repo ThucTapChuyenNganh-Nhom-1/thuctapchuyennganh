@@ -48,21 +48,14 @@ class Queries
         return $member;
     }
 
-    public static function getProject($page = 1)
-    {
-        $args = [
-            'post_type' =>  'page',
-            'posts_per_page' => '4',
-            'paged' => $page
-        ];
-
-        $project = new \WP_Query($args);
-
-        // foreach ($project->posts as $p) {
-        //     $p->desc = get_field('description', $p->ID);
-            
-        // }
-
-        return $project;
-    }
+    // public static function getPosts($page = 1)
+    // {
+    //     $args = [
+    //         'post_type' =>  'post',
+    //         'posts_per_page' => '3',
+    //         'paged' => $page
+    //     ];
+    //     $posts = new \WP_Query($args);
+    //     return $posts;
+    // }
 }

@@ -11,7 +11,7 @@ export default class LoadMoreAjax {
                 dataType: 'json',
                 url: '/wp-admin/admin-ajax.php',
                 data: {
-                    action: 'load_more_posts',
+                    action: 'load_more_member',
                     page: currentPage
                 },
                 success: function (response) {

@@ -12,6 +12,9 @@ class Ajax
 
         add_action('wp_ajax_load_more_member', array($this, 'loadMoreMem'));
         add_action('wp_ajax_nopriv_load_more_member', array($this, 'loadMoreMem'));
+
+        // add_action('wp_ajax_load_more_posts', array($this, 'loadMorePosts'));
+        // add_action('wp_ajax_nopriv_load_more_posts', array($this, 'loadMorePosts'));
     }
     public function getExample()
     {
@@ -60,4 +63,5 @@ class Ajax
             'result' => $result,
         ]);
     }
+    
 }

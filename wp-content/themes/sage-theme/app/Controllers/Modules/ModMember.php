@@ -18,4 +18,5 @@ class ModMember
     {
         return Queries::getMember();
     }
+
 }
