@@ -14,7 +14,7 @@
                                 @foreach ($mem->mem_social as $social)
                                     <a class="p-6" href="{{ $social['link']['url'] }}" rel="noreferrer" target="{{ $social['link']['target'] }}"
                                         class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4">
-                                        <img src="{{ $social['icon']['url'] }}" alt="{{ $social['icon']['alt'] }}" class="h-8" />
+                                        <img src="{{ $social['icon']['url'] }}" alt="{{ $social['icon']['alt'] }}" class="h-8 iconow" />
                                     </a>
                                 @endforeach                                
                             </div>
