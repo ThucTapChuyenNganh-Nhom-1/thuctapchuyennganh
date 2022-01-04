@@ -27,6 +27,4 @@
     </div>
 </section>
 
-<?php 
-    // var_dump($data->member->posts);
-?>
+<div id="projecthome"></div>  

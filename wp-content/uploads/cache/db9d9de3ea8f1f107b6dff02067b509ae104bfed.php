@@ -30,13 +30,13 @@
                         <a class="block py-9 lg:p-9 no-underline text-black" href="#">TRANG CHỦ</a>
                     </li>
                     <li class="menu-item mb-0">
-                        <a class="block py-9 lg:p-9 no-underline text-black" href="#about-us">GIỚI THIỆU</a>
+                        <a class="block py-9 lg:p-9 no-underline text-black" href="#aboutus">GIỚI THIỆU</a>
                     </li>
                     <li class="menu-item mb-0">
-                        <a class="block py-9 lg:p-9 no-underline text-black" href="#project-home">DỰ ÁN</a>
+                        <a class="block py-9 lg:p-9 no-underline text-black" href="#projecthome">DỰ ÁN</a>
                     </li>
                     <li class="active menu-item mb-0">
-                        <a class="block py-9 lg:p-9 no-underline text-black" href="#contact-home">LIÊN HỆ</a>
+                        <a class="block py-9 lg:p-9 no-underline text-black" href="#contacthome">LIÊN HỆ</a>
                     </li>
                 </ul>
             </div>
