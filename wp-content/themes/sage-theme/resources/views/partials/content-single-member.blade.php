@@ -4,6 +4,7 @@
 //     $image_avt = get_field('personal_image', $test->ID);
 // }
 // var_dump(App::getMemberInfo($post));
+
 ?>
 
 {{-- Menu --}}
@@ -12,10 +13,10 @@
     <div class="md:relative mx-auto lg:float-right">
         <ul class="list-none pl-5 flex justify-between flex-row md:flex-col text-center md:text-left">
             <li class="mr-3">
-                <a href="home"
+                <a href="{!! App::getMemberInfo($post)->link_home['url'] !!}"
                     class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500 third after ">
                     <span class="pt-2 pr-3 block icomoon icon-home"></span>
-                    <span class="pb-1 md:pb-0 text-base">Trang chủ</span>
+                    <span class="pb-1 md:pb-0 text-base">{!! App::getMemberInfo($post)->link_home['title'] !!}</span>
                 </a>
             </li>
             <li class="mr-3">
