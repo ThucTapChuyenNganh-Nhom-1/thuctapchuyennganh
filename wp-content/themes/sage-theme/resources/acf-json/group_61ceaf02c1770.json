@@ -206,28 +206,6 @@
             ]
         },
         {
-            "key": "field_61d02e778a808",
-            "label": "Project",
-            "name": "project",
-            "type": "post_object",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "resource"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "multiple": 1,
-            "return_format": "object",
-            "ui": 1
-        },
-        {
             "key": "field_61d26643b259a",
             "label": "Contact",
             "name": "contact",
@@ -503,5 +481,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1641366326
+    "modified": 1641386301
 }

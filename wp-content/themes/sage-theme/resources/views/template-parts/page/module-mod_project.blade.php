@@ -25,9 +25,7 @@
                             <span>-</span>
                             <span class="text-gray-600"> {!! $item2->end !!}</span>
                         </p>
-                        <span>
-                            {!! $item2['content'] !!}
-                        </span>
+                        {!! $item2['content'] !!}
                         <div class="flex project-a afmp">
                             @foreach ($item2['link_member'] as $item3)
                                 <a href="{!! $item3['link']['url'] !!}" class="mr-5">

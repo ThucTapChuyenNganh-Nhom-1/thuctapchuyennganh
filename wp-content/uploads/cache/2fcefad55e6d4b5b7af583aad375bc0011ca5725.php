@@ -1,3 +1,4 @@
+<?php $i=0; ?>
 <section class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 fadeInUp">
     <div class="container">
         <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 list-posts">    
@@ -14,8 +15,8 @@
 
                             <div class="flex items-center justify-center space-x-3">
                                 <?php $__currentLoopData = $mem->mem_social; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $social): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                    <a class="p-6" href="<?php echo e($social['link']['url']); ?>" rel="noreferrer" target="<?php echo e($social['link']['target']); ?>"
-                                        class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4">
+                                    <a href="<?php echo e($social['link']['url']); ?>" rel="noreferrer" target="<?php echo e($social['link']['target']); ?>"
+                                        class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4 p-6">
                                         <img src="<?php echo e($social['icon']['url']); ?>" alt="<?php echo e($social['icon']['alt']); ?>" class="h-8 iconow" />
                                     </a>
                                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>                                
@@ -23,12 +24,14 @@
                         </div>
                     </div>
                 </div>
+                <?php if($i>=3): ?>
+                    <?php break; ?>
+                <?php endif; ?>
+                <?php $i++?>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
         <button class="btn btn- mx-auto block btn-loadmore mt-10" data-page="2">Xem thêm</button>
     </div>
 </section>
 
-<?php 
-    // var_dump($data->member->posts);
-?>
+<div id="projecthome"></div>  

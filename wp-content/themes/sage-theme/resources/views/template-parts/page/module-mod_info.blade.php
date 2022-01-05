@@ -136,7 +136,7 @@ $project = $data->resource->posts[0]->project;
                         </div>
                     </div>
                     <div>
-                        {!! $item['title'] !!}               
+                        <h6>{!! $item['title'] !!} </h6>                              
                         <ul class="p-0 grid grid-cols-2 gap-x-10">
                             @foreach ($item['att'] as $item1)                                        
                             <li class="flex items-start">

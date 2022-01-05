@@ -38,7 +38,7 @@
         </div>
         <hr class="w-full my-8 gray-300" />
         <div class="pb-4 text-center">
-            <h2> Các dự án đã thực hiện </h2>
+            <a href="{!! App::getResourceInfo($post)->link_home['url'] !!}"><h3>Trở Về Trang Chủ</h3></a>
         </div>
         <hr class="w-full my-8 gray-300" />
     </div>
