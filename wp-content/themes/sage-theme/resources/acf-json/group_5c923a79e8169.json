@@ -318,7 +318,7 @@
                             "key": "field_61d0510a9dc44",
                             "label": "Project",
                             "name": "project",
-                            "type": "repeater",
+                            "type": "post_object",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -327,165 +327,29 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "collapsed": "",
-                            "min": 0,
-                            "max": 0,
-                            "layout": "table",
-                            "button_label": "",
-                            "sub_fields": [
-                                {
-                                    "key": "field_61d053e89dc45",
-                                    "label": "Link Project",
-                                    "name": "link_project",
-                                    "type": "link",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "array"
-                                },
-                                {
-                                    "key": "field_61d0540b9dc46",
-                                    "label": "Img Project",
-                                    "name": "img_project",
-                                    "type": "image",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "preview_size": "medium",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
-                                },
-                                {
-                                    "key": "field_61d054869dc47",
-                                    "label": "Start",
-                                    "name": "start",
-                                    "type": "date_picker",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "display_format": "d\/m\/Y",
-                                    "return_format": "d\/m\/Y",
-                                    "first_day": 1
-                                },
-                                {
-                                    "key": "field_61d054a39dc48",
-                                    "label": "End",
-                                    "name": "end",
-                                    "type": "date_picker",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "display_format": "d\/m\/Y",
-                                    "return_format": "d\/m\/Y",
-                                    "first_day": 1
-                                },
-                                {
-                                    "key": "field_61d054b19dc49",
-                                    "label": "Content",
-                                    "name": "content",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1,
-                                    "delay": 0
-                                },
-                                {
-                                    "key": "field_61d054c59dc4a",
-                                    "label": "Link Member",
-                                    "name": "link_member",
-                                    "type": "repeater",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "collapsed": "",
-                                    "min": 0,
-                                    "max": 0,
-                                    "layout": "table",
-                                    "button_label": "",
-                                    "sub_fields": [
-                                        {
-                                            "key": "field_61d0553c9dc4c",
-                                            "label": "Link",
-                                            "name": "link",
-                                            "type": "link",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "return_format": "array"
-                                        },
-                                        {
-                                            "key": "field_61d055519dc4d",
-                                            "label": "Img",
-                                            "name": "img",
-                                            "type": "image",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "return_format": "array",
-                                            "preview_size": "medium",
-                                            "library": "all",
-                                            "min_width": "",
-                                            "min_height": "",
-                                            "min_size": "",
-                                            "max_width": "",
-                                            "max_height": "",
-                                            "max_size": "",
-                                            "mime_types": ""
-                                        }
-                                    ]
-                                }
-                            ]
+                            "post_type": [
+                                "resource"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 1,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_61d55b3c4b458",
+                            "label": "Link",
+                            "name": "link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
                         }
                     ],
                     "min": "",
@@ -832,7 +696,50 @@
                     "name": "mod_info",
                     "label": "Mod Info",
                     "display": "block",
-                    "sub_fields": [],
+                    "sub_fields": [
+                        {
+                            "key": "field_61d566f2eeb7a",
+                            "label": "Member",
+                            "name": "member",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "member",
+                                "resource"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 1,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_61d56ec10c3e8",
+                            "label": "ID",
+                            "name": "id",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
                     "min": "",
                     "max": ""
                 },
@@ -849,6 +756,15 @@
                     "key": "layout_61c819d4af549",
                     "name": "mod_contact",
                     "label": "Mod Contact",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_61d5104287c94": {
+                    "key": "layout_61d5104287c94",
+                    "name": "mod_resource_project",
+                    "label": "Mod Resource Project",
                     "display": "block",
                     "sub_fields": [],
                     "min": "",
@@ -877,5 +793,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1641229603
+    "modified": 1641377493
 }

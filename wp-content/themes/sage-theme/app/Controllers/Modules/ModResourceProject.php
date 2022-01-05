@@ -4,7 +4,7 @@ namespace App\Controllers\Modules;
 
 use App\Services\Queries;
 
-class ModProject
+class ModResourceProject
 {
     public function dataModule($module)
     {

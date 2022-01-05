@@ -1,3 +1,4 @@
+<?php $i=0; ?>
 <section class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 fadeInUp">
     <div class="container">
         <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 list-posts">    
@@ -21,6 +22,10 @@
                         </div>
                     </div>
                 </div>
+                @if($i>=3)
+                    @break
+                @endif
+                <?php $i++?>
             @endforeach
         </div>
         <button class="btn btn- mx-auto block btn-loadmore mt-10" data-page="2">Xem thêm</button>

@@ -1,7 +1,3 @@
-<?php 
-    $project=$data->resource->posts;
-    $i=0;
-?>
 <section class="mod-project">
     <div class="container">
         <hr class="w-full my-8 border-gray-300" />
@@ -10,12 +6,12 @@
         </div>
         <hr class="w-full my-8 border-gray-300" />
         <div class="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            @foreach ($project[0]->project as $item2)
+            @foreach ($data->module['project'] as $item2)
                 <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl max-w-[410px]">
 
-                    <a href="{!! $item2['link_project']['url'] !!}">
-                        <img src="{!! $item2['image_project']['url'] !!}" class="object-cover project w-full h-[190px] zoom"
-                            alt="{!! $item2['image_project']['url'] !!}" />
+                    <a href="{!! $item2->link_project->url !!}">
+                        <img src="{!! $item2->img_project->url !!}" class="object-cover project w-full h-[190px] zoom"
+                            alt="{!! $item2->img_project->alt !!}" />
                     </a>
 
                     <div class="p-5 border border-t-0">
@@ -26,26 +22,19 @@
                             <span class="text-gray-600"> {!! $item2->end !!}</span>
                         </p>
                         <span>
-                            {!! $item2['content'] !!}
+                            {!! $item2->content !!}
                         </span>
-                        <div class="flex project-a afmp">
-                            @foreach ($item2['link_member'] as $item3)
-                                <a href="{!! $item3['link']['url'] !!}" class="mr-5">
-                                    <img src="{!! $item3['image']['url'] !!}" alt="{!! $item3['image']['alt'] !!}"
+                        <div class="afmp flex pt-19">
+                            @foreach ($item2->link_member as $item3)
+                                <a href="{!! $item3->link->url !!}" class="mr-5">
+                                    <img src="{!! $item3->img->url !!}" alt="{!! $item3->img->alt !!}"
                                         class="object-cover member-project w-20 h-20 rounded-full shadow-sm" />
                                 </a>
                             @endforeach
                         </div>
                     </div>
                 </div>
-                @if($i>=5) @break @endif 
-                <?php $i++; ?>
             @endforeach
         </div>
-        <hr class="w-full my-8 border-gray-300" />
-        <div class="pb-4 text-center">
-            <a href="{!! $data->module['link']->url !!}"> <h4>{!! $data->module['link']->title !!} </h4></a>
-        </div>
-        <hr class="w-full my-8 border-gray-300" />
     </div>
 </section>

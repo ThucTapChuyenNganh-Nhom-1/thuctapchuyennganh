@@ -159,48 +159,7 @@
 
 <div class="h-50"></div>
 
-{{-- Project --}}
-<?php 
-    $project = App::getMemberInfo($post)->project;
-?>
 
-<section id="project" class="mod-banner md:ml-60">
-    <div class="container">
-        <div class="pb-10 text-center">
-            <h2> Các dự án đã thực hiện </h2>
-        </div>
-        <div class="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            
-            @foreach ($project as $item2)           
-            <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl max-w-[410px]">                       
-                <a href="{!! $item2['link_project']['url'] !!}">
-                    <img src="{!! $item2['img_project']['url']!!}"
-                        class="object-cover project w-full h-[256px] zoom" alt="{!! $item2['img_project']['alt'] !!}" />
-                </a>
-
-                <div class="p-5 border border-t-0">
-                    <p class="mb-3 text-base font-semibold tracking-wide uppercase">                      
-                        <span class="text-gray-600">{!! $item2['start'] !!} </span>
-                        <span>-</span>
-                        <span class="text-gray-600"> {!! $item2['end'] !!}</span>
-                    </p>             
-                    {!! $item2['content'] !!}
-                    <div class="flex project-a afmp">
-                        @foreach ($item2['link_member'] as $item3)                   
-                        <a href="{!! $item3['link']['url'] !!}" class="mr-5">
-                            <img src="{!! $item3['img']['url'] !!}" alt="{!! $item3['img']['alt'] !!}"
-                                class="object-cover member-project w-20 h-20 rounded-full shadow-sm" />
-                        </a>
-                        @endforeach
-                    </div>
-                </div>
-            </div> 
-            @endforeach   
-        </div>
-    </div>
-</section>
-
-{{-- Contact --}}
 
 <?php 
     $contact = App::getMemberInfo($post)->contact;

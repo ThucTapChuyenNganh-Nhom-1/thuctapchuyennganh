@@ -1,4 +1,4 @@
-<footer class="mod-footer fadeIn_1 -mb-50">
+<footer id="contacthome" class="mod-footer fadeIn_1 -mb-50">
     <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-[1280px] md:px-24 lg:px-8 ">
         <div class="footer-input_mail w-2/4 text-center mx-auto text-sm hidden xl:block md:block lg:block">
             <div class="col-lg-8 offset-lg-2">
@@ -11,14 +11,14 @@
                 <form id="search" action="#" method="GET">
                     <div class="flex justify-center">
                         <div class="">
-                            <fieldset class="w-[160px] md:w-[320px] text-sm lg:text-xl">
+                            <fieldset class="fieldset w-[160px] md:w-[320px] text-sm lg:text-xl">
                                 <label class="hidden" for="email">Email</label>
                                 <input id="email" type="email" name="email" class="email rounded-3xl" placeholder="Địa chỉ Email..."
                                     autoComplete="on" required />
                             </fieldset>
                         </div>
                         <div class="">
-                            <fieldset class="w-[80px] md:w-[176px] ml-3 text-sm lg:text-xl">
+                            <fieldset class="fieldset w-[80px] md:w-[176px] ml-3 text-sm lg:text-xl">
                                 <button type="submit" class="main-button">Gửi Ngay <i
                                         class="fa fa-angle-right"></i></button>
                             </fieldset>
@@ -30,7 +30,7 @@
         <div class="footer-list grid gap-10 row-gap-3 mb-8 sm:grid-cols-2 lg:grid-cols-4 contact">
             <div class="footer-logo sm:col-span-2 hidden lg:block">
                 <a href="<?php echo $data->module['logo']->link->url; ?>" aria-label="Go home" class="inline-flex items-center">
-                    <img alt="<?php echo $data->module['logo']->logo->alt; ?>" src="<?php echo $data->module['logo']->logo->url; ?>" />
+                    <img alt="<?php echo $data->module['logo']->logo->alt; ?>" class="logof" src="<?php echo $data->module['logo']->logo->url; ?>" />
                 </a>
                 <div class="mt-6 lg:max-w-sm">
                     <?php echo $data->module['content']; ?>
@@ -73,8 +73,8 @@
                 </span>
                 <div class="flex items-center mt-1 space-x-3 justify-center md:justify-start">
                     <?php $__currentLoopData = $data->module['mxh']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <a href="<?php echo $value->link->url; ?>" class="transition-colors duration-300 hover:text-deep-purple-accent-400 px-2">
-                        <img alt="<?php echo $value->image->alt; ?>" src="<?php echo $value->image->url; ?>" />
+                    <a href="<?php echo $value->link->url; ?>" class="transition-colors  duration-300 hover:text-deep-purple-accent-400 px-2">
+                        <img alt="<?php echo $value->image->alt; ?>" class="iconfooter" src="<?php echo $value->image->url; ?>" />
 
                     </a>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

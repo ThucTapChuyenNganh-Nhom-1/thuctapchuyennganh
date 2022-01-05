@@ -120,9 +120,15 @@ class App extends Controller
         $post->ability = get_field('ability', $post->ID);
         $post->project = get_field('project', $post->ID);
         $post->contact = get_field('contact', $post->ID);
-             
+        $post->mxh = get_field('mxh', $post->ID);
         return $post;
         
+    }
+
+    public static function getResourceInfo($post)
+    {
+        $post->project = get_field('project', $post->ID);
+        return $post;       
     }
 
 }
