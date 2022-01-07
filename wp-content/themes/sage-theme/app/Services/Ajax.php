@@ -47,7 +47,7 @@ class Ajax
                                 foreach ($mem->mem_social as $social){
                                     echo '<a class="p-6" href="'. $social['link']['url'] .'" rel="noreferrer" target="'. $social['link']['target'] .'"';
                                         echo 'class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4">';
-                                        echo '<img src="'. $social['icon']['url'] .'" alt="instagram link" class="h-8" />';
+                                        echo '<img src="'. $social['icon']['url'] .'" alt="instagram link" class="h-8 iconow" />';
                                     echo '</a>';
                                 }                              
                             echo '</div>';

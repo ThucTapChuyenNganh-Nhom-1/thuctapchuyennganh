@@ -81,7 +81,7 @@
             </div>
         </div>
         
-        <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row p-0">
+        <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row p-0 iconow">
             {!! $data->module['copyright']!!}
             <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
                 @foreach($data->module['fax'] as $value2)
