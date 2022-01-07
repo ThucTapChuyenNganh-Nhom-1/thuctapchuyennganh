@@ -5,8 +5,9 @@
             @foreach ($data->member->posts as $mem)
                 <div class="max-w-[312px]">
                     <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
-                        <img class="object-cover w-full h-[224] md:h-[256px] xl:h-[320px]" src="{!! $mem->img['url'] !!}" alt="Person" />
-                        <div class="member-info absolute inset-0 flex flex-col justify-center px-10 py-8 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                             <img src="{{IMG_BASE64}}" alt="Person" class="object-cover w-full h-[224] md:h-[256px] xl:h-[320px] lazy"
+                                         data-src="{!! $mem->img['url'] !!}">
+                   <div class="member-info absolute inset-0 flex flex-col justify-center px-10 py-8 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                             <a href="{!! $mem->mem_link['url'] !!}">
                                 {!! $mem->mem_link['title'] !!}
                             </a>
@@ -15,7 +16,8 @@
                                 @foreach ($mem->mem_social as $social)
                                     <a href="{{ $social['link']['url'] }}" rel="noreferrer" target="{{ $social['link']['target'] }}"
                                         class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4 p-6">
-                                        <img src="{{ $social['icon']['url'] }}" alt="{{ $social['icon']['alt'] }}" class="h-8 iconow" />
+                                        <img src="{{IMG_BASE64}}" alt="{{ $social['icon']['alt'] }}" class="h-8 iconow lazy"
+                                         data-src="{{ $social['icon']['url'] }}">
                                     </a>
                                 @endforeach                                
                             </div>

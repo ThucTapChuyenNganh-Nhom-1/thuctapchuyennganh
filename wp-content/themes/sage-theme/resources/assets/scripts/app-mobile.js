@@ -11,5 +11,6 @@ import './modules/Menu';
 import './modules/Popup';
 import './modules/LoadMoreAjax';
 import './modules/SelectC8';
+import './modules/LazyLoadImage';
 
 console.log('App Mobile')

@@ -30,7 +30,8 @@
         <div class="footer-list grid gap-10 row-gap-3 mb-8 sm:grid-cols-2 lg:grid-cols-4 contact">
             <div class="footer-logo sm:col-span-2 hidden lg:block">
                 <a href="<?php echo $data->module['logo']->link->url; ?>" aria-label="Go home" class="inline-flex items-center">
-                    <img alt="<?php echo $data->module['logo']->logo->alt; ?>" class="logof" src="<?php echo $data->module['logo']->logo->url; ?>" />
+                     <img src="<?php echo e(IMG_BASE64); ?>" alt="!! $data->module['logo']->logo->alt!!}" class="logof lazy"
+                                         data-src="<?php echo $data->module['logo']->logo->url; ?>">
                 </a>
                 <div class="mt-6 lg:max-w-sm">
                     <?php echo $data->module['content']; ?>
@@ -74,7 +75,9 @@
                 <div class="flex items-center mt-1 space-x-3 justify-center md:justify-start">
                     <?php $__currentLoopData = $data->module['mxh']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <a href="<?php echo $value->link->url; ?>" class="transition-colors  duration-300 hover:text-deep-purple-accent-400 px-2">
-                        <img alt="<?php echo $value->image->alt; ?>" class="iconfooter" src="<?php echo $value->image->url; ?>" />
+                        <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo $value->image->alt; ?>" class="iconfooter lazy"
+                                         data-src="<?php echo $value->image->url; ?>">
+                        
 
                     </a>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

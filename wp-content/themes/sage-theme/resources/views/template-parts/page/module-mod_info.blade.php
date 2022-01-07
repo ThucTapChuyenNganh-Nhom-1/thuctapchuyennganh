@@ -65,8 +65,8 @@ $project = $data->resource->posts[0]->project;
             <div class="info-table row justify-center ">
                 <!-- nội dung trái-->
                 <div class="col md:w-4/5 lg:w-1/2 fadeInLeft">
-                    <img class="rounded-3xl" src=" {{ $mem->img['url'] }} "
-                        alt="{{ $mem->img['alt'] }}">
+                        <img src="{{IMG_BASE64}}" alt="{{ $mem->img['alt'] }}" class="rounded-3xl lazy"
+                                         data-src=" {{ $mem->img['url'] }}">
                 </div>
                 <!-- nội dung phải -->
                 <div class="info-table-content col mt-10 md:w-4/5 lg:w-1/2 fadeInRight">

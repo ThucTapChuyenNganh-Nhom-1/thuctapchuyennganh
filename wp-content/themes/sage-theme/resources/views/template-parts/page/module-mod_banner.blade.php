@@ -19,13 +19,16 @@
                 <div class="flex items-center justify-center lg:justify-start ls_icon space-x-6 ">
                     @foreach($data->module['link'] as $value)
                     <a href="{!! $value->link->url !!}" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img alt="{!! $value->image->alt !!}" src="{!! $value->image->url !!}" class="icomoon h-15 "  />
+                        <img src="{{IMG_BASE64}}" alt="{!! $value->image->alt !!}" class="icomoon h-15 lazy"
+                                         data-src="{!! $value->image->url !!}">
+                        
                     </a>
                     @endforeach
                 </div>
             </div>
             <div class="col slideInRight w-full lg:w-6/12 right-banner fadeInRight">
-                <img src="{!! $data->module['image']->url !!}" class="imgbh" alt="{!! $data->module['image']->alt !!}" />
+               <img src="{{IMG_BASE64}}" alt="{!! $data->module['image']->alt !!}" class="imgbh lazy"
+                                         data-src="{!! $data->module['image']->url !!}">
             </div>
         </div>
     </div>

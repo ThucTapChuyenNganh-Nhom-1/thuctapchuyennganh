@@ -12,6 +12,6 @@ import './modules/Menu';
 import './modules/Popup';
 import './modules/SelectC8';
 import './modules/LoadMoreAjax';
-
+import './modules/LazyLoadImage';
 
 console.log('App Desktop')

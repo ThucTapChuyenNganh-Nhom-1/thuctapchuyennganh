@@ -1,4 +1,4 @@
-<header id="header" class="module header w-full top-0 left-0 fixed z-200 down_lg:overflow-hidden">
+<header id="header" class="module header w-full top-0 left-0 fixed z-200 down_lg:overflow-hidden fadeInDown">
     <div class="container">
         <nav class="row navbar items-center">
             <div
@@ -30,14 +30,13 @@
                         <a class="block py-9 lg:p-9 no-underline text-black" href="#">TRANG CHỦ</a>
                     </li>
                     <li class="menu-item mb-0">
-                        <a class="block py-9 lg:p-9 no-underline text-black" href="#">GIỚI THIỆU</a>
+                        <a class="block py-9 lg:p-9 no-underline text-black" href="#aboutus">GIỚI THIỆU</a>
                     </li>
                     <li class="menu-item mb-0">
-                        <a class="block py-9 lg:p-9 no-underline text-black" href="#">DỰ ÁN</a>
+                        <a class="block py-9 lg:p-9 no-underline text-black" href="#projecthome">DỰ ÁN</a>
                     </li>
-
                     <li class="active menu-item mb-0">
-                        <a class="block py-9 lg:p-9 no-underline text-black" href="#">LIÊN HỆ</a>
+                        <a class="block py-9 lg:p-9 no-underline text-black" href="#contacthome">LIÊN HỆ</a>
                     </li>
                 </ul>
             </div>

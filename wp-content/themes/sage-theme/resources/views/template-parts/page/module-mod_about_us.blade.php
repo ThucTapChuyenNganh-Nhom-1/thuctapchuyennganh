@@ -2,7 +2,8 @@
     <div class="container">
         <div class="max-w-[640px] sm:text-center sm:mx-auto visible relative z-2">
             {!! $data->module['content']!!}
-            <img src="{!! $data->module['image']->url!!}" alt="{!! $data->module['image']->alt!!}" class="w-14 text-center mx-auto mb-2"/>
+            <img src="{{IMG_BASE64}}" alt="{!! $data->module['image']->alt!!}" class="w-14 text-center mx-auto mb-2 lazy"
+                                         data-src="{!! $data->module['image']->url!!}">
             {!! $data->module['sub_content']!!}
             <hr class="w-full my-8 border-gray-300" />
         </div>

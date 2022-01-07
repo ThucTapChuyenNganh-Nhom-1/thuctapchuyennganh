@@ -29,7 +29,8 @@
         <div class="footer-list grid gap-10 row-gap-3 mb-8 sm:grid-cols-2 lg:grid-cols-4 contact">
             <div class="footer-logo sm:col-span-2 hidden lg:block">
                 <a href="{!! $data->module['logo']->link->url!!}" aria-label="Go home" class="inline-flex items-center">
-                    <img alt="{!! $data->module['logo']->logo->alt!!}" class="logof" src="{!! $data->module['logo']->logo->url!!}" />
+                     <img src="{{IMG_BASE64}}" alt="!! $data->module['logo']->logo->alt!!}" class="logof lazy"
+                                         data-src="{!! $data->module['logo']->logo->url!!}">
                 </a>
                 <div class="mt-6 lg:max-w-sm">
                     {!! $data->module['content']!!}
@@ -69,7 +70,9 @@
                 <div class="flex items-center mt-1 space-x-3 justify-center md:justify-start">
                     @foreach( $data->module['mxh'] as $value)
                     <a href="{!! $value->link->url!!}" class="transition-colors  duration-300 hover:text-deep-purple-accent-400 px-2">
-                        <img alt="{!! $value->image->alt!!}" class="iconfooter" src="{!! $value->image->url!!}" />
+                        <img src="{{IMG_BASE64}}" alt="{!! $value->image->alt!!}" class="iconfooter lazy"
+                                         data-src="{!! $value->image->url!!}">
+                        
 
                     </a>
                     @endforeach
