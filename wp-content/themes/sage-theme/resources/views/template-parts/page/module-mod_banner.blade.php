@@ -1,7 +1,7 @@
 <section class="mod-banner bg_content mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 mt-[-210px]">
     <div class="container">
         <div class="row show-up ">
-            <div class="left-banner col pr-0 lg:p-10 slideInLeft self-center w-full lg:w-6/12 fadeInLeft">
+            <div class="left-banner col pr-0 lg:p-10 slideInLeft self-center w-full lg:w-6/12 fadeInLeft itemh1">
                 {{-- <a href="/" aria-label="Go Home" title="Logo" class="inline-block mb-5">
                     <div class="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
                         <svg class="icomoon w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">

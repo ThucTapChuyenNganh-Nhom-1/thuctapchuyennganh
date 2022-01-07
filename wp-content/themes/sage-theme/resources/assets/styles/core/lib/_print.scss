@@ -333,14 +333,6 @@ padding-left: 23%;
   padding: 7%;
   padding-right: 15%;
 }
-.h1{
-  padding-right: 25%;
-
-}
-.h2{
-  padding: 5%;
-  padding-right: 15%;
-}
 
 .project{
   max-width:900px;
@@ -351,6 +343,7 @@ padding-left: 23%;
 }
 
 .iconfooter{
+  display: none;
   max-width: 100px;
   max-height: 100px;
 }
@@ -368,4 +361,10 @@ padding-left: 23%;
 .imgmb{
     max-width: 400px;
   max-height: 376px;
+}
+.set{
+  padding-left: 15%;
+}
+.itemh1{
+  padding-right: 10% ;
 }

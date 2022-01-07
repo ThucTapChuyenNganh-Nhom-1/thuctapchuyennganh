@@ -1,7 +1,7 @@
 <?php $i=0; ?>
 <section class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 fadeInUp">
     <div class="container">
-        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 list-posts">    
+        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 list-posts set">    
             @foreach ($data->member->posts as $mem)
                 <div class="max-w-[312px]">
                     <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">

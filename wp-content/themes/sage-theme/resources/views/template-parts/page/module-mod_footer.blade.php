@@ -2,7 +2,7 @@
     <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-[1280px] md:px-24 lg:px-8 ">
         <div class="footer-input_mail w-2/4 text-center mx-auto text-sm hidden xl:block md:block lg:block">
             <div class="col-lg-8 offset-lg-2">
-                <div class="xl:text-2xl md:text-2xl lg:text-4xl font-bold lg:mb-10">
+                <div class="xl:text-2xl md:text-2xl lg:text-4xl font-bold lg:mb-10 itemh1">
                     {!! $data->module['title']!!}
                 </div>
             </div>
