@@ -194,8 +194,8 @@ $project = $data->resource->posts[0]->project;
                 <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl max-w-[410px]">
 
                     <a href="<?php echo $item2['link_project']['url']; ?>">
-                        <img src="<?php echo $item2['image_project']['url']; ?>" class="object-cover project w-full h-[190px] zoom"
-                            alt="<?php echo $item2['image_project']['url']; ?>" />
+                        <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo $item2['image_project']['url']; ?>" class="object-cover project w-full h-[190px] zoom lazy"
+                                         data-src="<?php echo $item2['image_project']['url']; ?>">
                     </a>
 
                     <div class="p-5 border border-t-0">
