@@ -61,12 +61,12 @@ $project = $data->resource->posts[0]->project;
     <div class="container">
         <div class="pb-10 text-center">
             <h1><?php echo e($mem->name); ?></h1>
-            <p> <?php echo e($mem->des); ?> </p>
+            <p> <?php echo e($mem->description); ?> </p>
             <div class="info-table row justify-center ">
                 <!-- nội dung trái-->
                 <div class="col md:w-4/5 lg:w-1/2 fadeInLeft">
-                    <img class="rounded-3xl" src=" <?php echo e($mem->img['url']); ?> "
-                        alt="<?php echo e($mem->img['alt']); ?>">
+                        <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo e($mem->img['alt']); ?>" class="rounded-3xl lazy"
+                                         data-src=" <?php echo e($mem->img['url']); ?>">
                 </div>
                 <!-- nội dung phải -->
                 <div class="info-table-content col mt-10 md:w-4/5 lg:w-1/2 fadeInRight">
@@ -194,16 +194,16 @@ $project = $data->resource->posts[0]->project;
                 <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl max-w-[410px]">
 
                     <a href="<?php echo $item2['link_project']['url']; ?>">
-                        <img src="<?php echo $item2['image_project']['url']; ?>" class="object-cover project w-full h-[190px] zoom"
-                            alt="<?php echo $item2['image_project']['url']; ?>" />
+                        <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo $item2['image_project']['url']; ?>" class="object-cover project w-full h-[190px] zoom lazy"
+                                         data-src="<?php echo $item2['image_project']['url']; ?>">
                     </a>
 
                     <div class="p-5 border border-t-0">
                         <p class="mb-3 text-base font-semibold tracking-wide uppercase max-h-[32px]">
 
-                            <span class="text-gray-600"><?php echo $item2->start; ?> </span>
+                            <span class="text-gray-600"><?php echo $item2['start']; ?> </span>
                             <span>-</span>
-                            <span class="text-gray-600"> <?php echo $item2->end; ?></span>
+                            <span class="text-gray-600"> <?php echo $item2['end']; ?></span>
                         </p>
                         <span>
                             <?php echo $item2['content']; ?>

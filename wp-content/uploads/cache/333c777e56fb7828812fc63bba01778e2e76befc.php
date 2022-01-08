@@ -14,24 +14,25 @@
                 <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl max-w-[410px]">
 
                     <a href="<?php echo $item2['link_project']['url']; ?>">
-                        <img src="<?php echo $item2['image_project']['url']; ?>" class="object-cover project w-full h-[190px] zoom"
-                            alt="<?php echo $item2['image_project']['url']; ?>" />
+
+                            <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo $item2['image_project']['url']; ?>" class=" object-cover project w-full h-[190px] zoom lazy"
+                             data-src="<?php echo $item2['image_project']['url']; ?>">
                     </a>
 
                     <div class="p-5 border border-t-0">
                         <p class="mb-3 text-base font-semibold tracking-wide uppercase max-h-[32px]">
 
-                            <span class="text-gray-600"><?php echo $item2->start; ?> </span>
+                            <span class="text-gray-600"><?php echo $item2['start']; ?> </span>
                             <span>-</span>
-                            <span class="text-gray-600"> <?php echo $item2->end; ?></span>
+                            <span class="text-gray-600"> <?php echo $item2['end']; ?></span>
                         </p>
                         <?php echo $item2['content']; ?>
 
                         <div class="flex project-a afmp">
                             <?php $__currentLoopData = $item2['link_member']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item3): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <a href="<?php echo $item3['link']['url']; ?>" class="mr-5">
-                                    <img src="<?php echo $item3['image']['url']; ?>" alt="<?php echo $item3['image']['alt']; ?>"
-                                        class="object-cover member-project w-20 h-20 rounded-full shadow-sm" />
+                                        <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo $item3['image']['alt']; ?>" class=" object-cover member-project w-20 h-20 rounded-full shadow-sm lazy"
+                             data-src="<?php echo $item3['image']['url']; ?>">
                                 </a>
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </div>

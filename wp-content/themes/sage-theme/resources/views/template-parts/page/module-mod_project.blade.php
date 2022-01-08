@@ -22,9 +22,9 @@
                     <div class="p-5 border border-t-0">
                         <p class="mb-3 text-base font-semibold tracking-wide uppercase max-h-[32px]">
 
-                            <span class="text-gray-600">{!! $item2->start !!} </span>
+                            <span class="text-gray-600">{!! $item2['start'] !!} </span>
                             <span>-</span>
-                            <span class="text-gray-600"> {!! $item2->end !!}</span>
+                            <span class="text-gray-600"> {!! $item2['end'] !!}</span>
                         </p>
                         {!! $item2['content'] !!}
                         <div class="flex project-a afmp">

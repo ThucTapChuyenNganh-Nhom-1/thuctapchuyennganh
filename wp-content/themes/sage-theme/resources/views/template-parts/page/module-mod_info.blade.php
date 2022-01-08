@@ -61,7 +61,7 @@ $project = $data->resource->posts[0]->project;
     <div class="container">
         <div class="pb-10 text-center">
             <h1>{{ $mem->name }}</h1>
-            <p> {{ $mem->des }} </p>
+            <p> {{ $mem->description }} </p>
             <div class="info-table row justify-center ">
                 <!-- nội dung trái-->
                 <div class="col md:w-4/5 lg:w-1/2 fadeInLeft">
@@ -196,9 +196,9 @@ $project = $data->resource->posts[0]->project;
                     <div class="p-5 border border-t-0">
                         <p class="mb-3 text-base font-semibold tracking-wide uppercase max-h-[32px]">
 
-                            <span class="text-gray-600">{!! $item2->start !!} </span>
+                            <span class="text-gray-600">{!! $item2['start'] !!} </span>
                             <span>-</span>
-                            <span class="text-gray-600"> {!! $item2->end !!}</span>
+                            <span class="text-gray-600"> {!! $item2['end'] !!}</span>
                         </p>
                         <span>
                             {!! $item2['content'] !!}
