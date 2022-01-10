@@ -18,6 +18,9 @@ const Colors = {
     100: '#1d4f91',
     200: '#1e5091'
   },
+  
+  lightBlue: '#add8e6',
+
   black: '#000',
   transparent: 'transparent'
 }

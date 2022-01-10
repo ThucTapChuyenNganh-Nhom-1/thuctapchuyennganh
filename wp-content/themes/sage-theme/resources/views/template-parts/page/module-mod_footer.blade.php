@@ -63,17 +63,15 @@
                     </a>
                 </div>
             </div>
-            <div class="footer-social">
+            <div class="footer-social iconfooter">
                 <span>
                     Mạng xã hội
                 </span>
                 <div class="flex items-center mt-1 space-x-3 justify-center md:justify-start">
                     @foreach( $data->module['mxh'] as $value)
                     <a href="{!! $value->link->url!!}" class="transition-colors  duration-300 hover:text-deep-purple-accent-400 px-2">
-                        <img src="{{IMG_BASE64}}" alt="{!! $value->image->alt!!}" class="iconfooter lazy"
+                        <img src="{{IMG_BASE64}}" alt="{!! $value->image->alt!!}" class=" lazy"
                                          data-src="{!! $value->image->url!!}">
-                        
-
                     </a>
                     @endforeach
                 </div>

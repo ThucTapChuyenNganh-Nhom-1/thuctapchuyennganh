@@ -9,6 +9,11 @@ export default class LazyLoadImage {
     $(window).on('resize orientationchange', () => {
       this.lazyLoadImage()
     })
+
+    $(window).on('beforeprint', () => {
+      this.lazyLoadAll()
+    })
+
   }
   lazyLoadImage () {
     if ($(this.lazyimage).length) {
@@ -66,6 +71,13 @@ export default class LazyLoadImage {
           this.hasSlider(element)
         }
       }
+    })
+  }
+  
+  lazyLoadAll() {
+    $(this.lazyimage).each((index, element) => {
+      const elementTmp = element.tagName
+      callBack.call(elementTmp, element)
     })
   }
 }

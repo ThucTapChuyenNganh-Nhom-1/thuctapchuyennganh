@@ -14,8 +14,10 @@
                             {!! $mem->about_me !!}
                             <div class="flex items-center justify-center space-x-3">
                                 @foreach ($mem->mem_social as $social)
+                                {{-- thiếu target --}}
                                     <a href="{{ $social['link']['url'] }}" rel="noreferrer" target="{{ $social['link']['target'] }}"
                                         class="text-white transition-colors duration-300 hover:text-teal-accent-400 px-4 p-6">
+                                        {{-- thiếu alt --}}
                                         <img src="{{IMG_BASE64}}" alt="{{ $social['icon']['alt'] }}" class="h-8 iconow lazy"
                                          data-src="{{ $social['icon']['url'] }}">
                                     </a>
