@@ -18,8 +18,8 @@
                         </div>
                         <div class="">
                             <fieldset class="fieldset w-[80px] md:w-[176px] ml-3 text-sm lg:text-xl">
-                                <button type="submit" class="main-button">Gửi Ngay <i
-                                        class="fa fa-angle-right"></i></button>
+                                <button type="submit" class="main-button">Gửi Ngay
+                                    <i class="fa fa-angle-right"></i></button>
                             </fieldset>
                         </div>
                     </div>

@@ -19,8 +19,8 @@
                         </div>
                         <div class="">
                             <fieldset class="fieldset w-[80px] md:w-[176px] ml-3 text-sm lg:text-xl">
-                                <button type="submit" class="main-button">Gửi Ngay <i
-                                        class="fa fa-angle-right"></i></button>
+                                <button type="submit" class="main-button">Gửi Ngay
+                                    <i class="fa fa-angle-right"></i></button>
                             </fieldset>
                         </div>
                     </div>
@@ -68,17 +68,15 @@
                     </a>
                 </div>
             </div>
-            <div class="footer-social">
+            <div class="footer-social iconfooter">
                 <span>
                     Mạng xã hội
                 </span>
                 <div class="flex items-center mt-1 space-x-3 justify-center md:justify-start">
                     <?php $__currentLoopData = $data->module['mxh']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <a href="<?php echo $value->link->url; ?>" class="transition-colors  duration-300 hover:text-deep-purple-accent-400 px-2">
-                        <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo $value->image->alt; ?>" class="iconfooter lazy"
+                        <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo $value->image->alt; ?>" class=" lazy"
                                          data-src="<?php echo $value->image->url; ?>">
-                        
-
                     </a>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </div>
