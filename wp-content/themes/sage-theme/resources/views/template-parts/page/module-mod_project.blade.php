@@ -39,7 +39,7 @@
                 </div>
                 @if($i>=5) @break @endif 
                 <?php $i++; ?>
-            @endforeach
+                @endforeach
         </div>
         <hr class="w-full my-8 border-gray-300" />
         <div class="pb-4 text-center">

@@ -3,7 +3,8 @@
         <div class="max-w-[640px] sm:text-center sm:mx-auto visible relative z-2">
             <?php echo $data->module['content']; ?>
 
-            <img src="<?php echo $data->module['image']->url; ?>" alt="<?php echo $data->module['image']->alt; ?>" class="w-14 text-center mx-auto mb-2"/>
+            <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo $data->module['image']->alt; ?>" class="w-14 text-center mx-auto mb-2 lazy"
+                                         data-src="<?php echo $data->module['image']->url; ?>">
             <?php echo $data->module['sub_content']; ?>
 
             <hr class="w-full my-8 border-gray-300" />

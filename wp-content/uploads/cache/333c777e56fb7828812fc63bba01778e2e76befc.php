@@ -40,7 +40,7 @@
                 </div>
                 <?php if($i>=5): ?> <?php break; ?> <?php endif; ?> 
                 <?php $i++; ?>
-            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
         <hr class="w-full my-8 border-gray-300" />
         <div class="pb-4 text-center">

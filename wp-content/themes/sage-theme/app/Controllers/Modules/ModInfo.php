@@ -9,17 +9,34 @@ class ModInfo
     {
         return (object) [
             'module' => $module,
-            'resource' => $this->getResource(),
-            'member' => $this->getMemberIn4()
+            'resource' => $this->getResource($module['id']),
+            'memberid' => $this->getMemberID($module['id'])
         ];
     }
-    protected function getResource()
+    protected function getResource($id)
     {
-        return Queries::getResource();
+        $resource = Queries::getResource();
+        $project = $resource->posts[0]->project;
+    $i = 0;
+    foreach ($project as $load) {
+        foreach ($load['link_member'] as $sub_load) {
+            if ($sub_load['link']['title'] == $id) {
+                $arr_pj[$i] = $load;
+                $i++;
+            }
+        }
     }
-
-    protected function getMemberIn4()
+        return $arr_pj;
+    }
+  
+    protected function getMemberID($id)
     {
-        return Queries::getMemberIn4();
+        $member = Queries::getMemberIn4();
+        foreach ($member->posts as $value) {
+            if ($value->post_title == $id) {
+                $mem = $value;
+            }
+        }
+        return $mem;
     }
 }
