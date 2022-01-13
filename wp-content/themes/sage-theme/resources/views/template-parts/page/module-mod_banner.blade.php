@@ -18,7 +18,8 @@
                 {{-- chưa đổ BE list icon --}}
                 <div class="flex items-center justify-center lg:justify-start ls_icon space-x-6 ">
                     @foreach($data->module['link'] as $value)
-                    <a href="{!! $value->link->url !!}" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
+                    <a href="{!! $value->link->url !!}" target="{{ $value->link->target }}"
+                         class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
                         <img src="{{IMG_BASE64}}" alt="{!! $value->image->alt !!}" class="icomoon h-15 lazy"
                                          data-src="{!! $value->image->url !!}">
                         

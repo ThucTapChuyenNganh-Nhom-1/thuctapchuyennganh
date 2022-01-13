@@ -13,7 +13,7 @@
             <?php $__currentLoopData = $project[0]->project; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item2): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl max-w-[410px]">
 
-                    <a href="<?php echo $item2['link_project']['url']; ?>">
+                    <a href="<?php echo $item2['link_project']['url']; ?>" target="<?php echo e($item2['link_project']['target']); ?>">
 
                             <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo $item2['image_project']['url']; ?>" class=" object-cover project w-full h-[190px] zoom lazy"
                              data-src="<?php echo $item2['image_project']['url']; ?>">

@@ -247,7 +247,7 @@
                     </span>
                     <div class="flex justify-around items-center mt-1 space-x-3 iconfooter">
                         @foreach ($data->memberid->contact['mxh'] as $item5)
-                            <a href="{!! $item5['link']['url'] !!}" class="no-underline px-5">
+                            <a href="{!! $item5['link']['url'] !!}" target="{{ $item5['link']['target'] }}" class="no-underline px-5">
                                 <img alt="{!! $item5['image']['alt'] !!}" src="{!! $item5['image']['url'] !!} "
                                     class="h-15" />
                             </a>

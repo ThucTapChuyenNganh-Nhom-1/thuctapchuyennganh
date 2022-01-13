@@ -12,7 +12,8 @@
                 
                 <div class="flex items-center justify-center lg:justify-start ls_icon space-x-6 ">
                     <?php $__currentLoopData = $data->module['link']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <a href="<?php echo $value->link->url; ?>" class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
+                    <a href="<?php echo $value->link->url; ?>" target="<?php echo e($value->link->target); ?>"
+                         class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
                         <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo $value->image->alt; ?>" class="icomoon h-15 lazy"
                                          data-src="<?php echo $value->image->url; ?>">
                         

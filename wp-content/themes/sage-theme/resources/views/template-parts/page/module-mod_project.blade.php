@@ -13,7 +13,7 @@
             @foreach ($project[0]->project as $item2)
                 <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl max-w-[410px]">
 
-                    <a href="{!! $item2['link_project']['url'] !!}">
+                    <a href="{!! $item2['link_project']['url'] !!}" target="{{ $item2['link_project']['target'] }}">
 
                             <img src="{{IMG_BASE64}}" alt="{!! $item2['image_project']['url'] !!}" class=" object-cover project w-full h-[190px] zoom lazy"
                              data-src="{!! $item2['image_project']['url'] !!}">

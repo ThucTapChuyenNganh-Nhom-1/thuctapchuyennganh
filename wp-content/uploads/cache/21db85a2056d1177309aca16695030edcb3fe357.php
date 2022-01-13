@@ -257,7 +257,7 @@
                     </span>
                     <div class="flex justify-around items-center mt-1 space-x-3 iconfooter">
                         <?php $__currentLoopData = $data->memberid->contact['mxh']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item5): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                            <a href="<?php echo $item5['link']['url']; ?>" class="no-underline px-5">
+                            <a href="<?php echo $item5['link']['url']; ?>" target="<?php echo e($item5['link']['target']); ?>" class="no-underline px-5">
                                 <img alt="<?php echo $item5['image']['alt']; ?>" src="<?php echo $item5['image']['url']; ?> "
                                     class="h-15" />
                             </a>
