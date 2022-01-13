@@ -1,4 +1,4 @@
-<section class="mod-banner bg_content mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 mt-[-210px]">
+<section class="mod-banner bg_content mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 -mt-105">
     <div class="container">
         <div class="row show-up ">
             <div class="left-banner col pr-0 lg:p-10 slideInLeft self-center w-full lg:w-6/12 fadeInLeft itemh1">
@@ -10,26 +10,25 @@
                         </svg>
                     </div>
                 </a> --}}
-                
+
                 {!! $data->module['content'] !!}
 
                 <hr class="mb-5 border-gray-300" />
 
                 {{-- chưa đổ BE list icon --}}
                 <div class="flex items-center justify-center lg:justify-start ls_icon space-x-6 ">
-                    @foreach($data->module['link'] as $value)
-                    <a href="{!! $value->link->url !!}" target="{{ $value->link->target }}"
-                         class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                        <img src="{{IMG_BASE64}}" alt="{!! $value->image->alt !!}" class="icomoon h-15 lazy"
-                                         data-src="{!! $value->image->url !!}">
-                        
-                    </a>
+                    @foreach ($data->module['link'] as $value)
+                        <a href="{!! $value->link->url !!}" target="{{ $value->link->target }}" rel="noreferrer"
+                            class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
+                            <img src="{{ IMG_BASE64 }}" alt="{!! $value->image->alt !!}" class="icomoon h-15 lazy"
+                                data-src="{!! $value->image->url !!}">
+                        </a>
                     @endforeach
                 </div>
             </div>
             <div class="col slideInRight w-full lg:w-6/12 right-banner fadeInRight">
-               <img src="{{IMG_BASE64}}" alt="{!! $data->module['image']->alt !!}" class="imgbh lazy"
-                                         data-src="{!! $data->module['image']->url !!}">
+                <img src="{{ IMG_BASE64 }}" alt="{!! $data->module['image']->alt !!}" class="imgbh lazy"
+                    data-src="{!! $data->module['image']->url !!}">
             </div>
         </div>
     </div>

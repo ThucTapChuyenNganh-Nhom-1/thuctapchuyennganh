@@ -1,39 +1,39 @@
 {{-- Menu --}}
 <div
-    class="menu-info w-full z-1 md:w-60 px-2 bg-blue-500 text-center fixed bottom-0 md:pt-8 md:top-0 md:left-0 h-27 md:h-screen md:border-r-2 md:border-gray-600">
+    class="menu-info w-full z-1 md:w-60 px-2 bg-blue-300 text-center fixed bottom-0 md:pt-8 md:top-0 md:left-0 h-27 md:h-screen md:border-r-2 md:border-gray-600">
     <div class="md:relative mx-auto lg:float-right">
         <ul class="list-none pl-5 flex justify-between flex-row md:flex-col text-center md:text-left">
             <li class="mr-3">
                 <a href="{!! $data->memberid->link_home['url'] !!}"
-                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500 third after ">
+                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 text-gray-800 no-underline hover:text-blue-700 border-b-2 border-gray-800 md:border-gray-900 hover:border-blue-700 third after ">
                     <span class="pt-2 pr-3 block icomoon icon-home"></span>
                     <span class="pb-1 md:pb-0 text-base">{!! $data->memberid->link_home['title'] !!}</span>
                 </a>
             </li>
             <li class="mr-3">
                 <a href="#info"
-                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500 third after">
+                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 text-gray-800 no-underline hover:text-blue-700 border-b-2 border-gray-800 md:border-gray-900 hover:border-blue-700 third after">
                     <span class="pt-2 pr-3 block icomoon icon-user"></span>
                     <span class="pb-1 md:pb-0 text-base">Thông tin</span>
                 </a>
             </li>
             <li class="mr-3">
                 <a href="#ability"
-                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500 third after">
+                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-blue-700 border-b-2 border-gray-800 md:border-gray-900 hover:border-blue-700 third after">
                     <span class="pt-2 pr-3 block icomoon icon-trophy"></span>
                     <span class="pb-1 md:pb-0 text-base">Năng lực</span>
                 </a>
             </li>
             <li class="mr-3">
                 <a href="#project"
-                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500 third after">
+                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-blue-700 border-b-2 border-gray-800 md:border-gray-900 hover:border-blue-700 third after">
                     <span class="pt-2 pr-3 block icomoon icon-folder"></span>
                     <span class="pb-1 md:pb-0 text-base">Dự án</span>
                 </a>
             </li>
             <li class="mr-3">
                 <a href="#contact"
-                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500 third after">
+                    class="md:w-50 self-center inline-block md:inline-flex py-1 md:py-3 align-middle text-gray-800 no-underline hover:text-blue-700 border-b-2 border-gray-800 md:border-gray-900 hover:border-blue-700 third after">
                     <span class="pt-2 pr-3 block icomoon icon-mail-envelope-closed2"></span>
                     <span class="pb-1 md:pb-0 text-base">Liên hệ</span>
                 </a>
@@ -54,23 +54,23 @@
                     <!-- nội dung trái-->
                     <div class="col md:w-4/5 lg:w-1/2 fadeInLeft">
                         <img src="{{ IMG_BASE64 }}" alt="{!! $data->memberid->img['alt'] !!}" class="rounded-3xl lazy"
-                        data-src=" {{ $data->memberid->img['url'] }}">
-                    </div>                  
+                            data-src=" {{ $data->memberid->img['url'] }}">
+                    </div>
                     <!-- nội dung phải -->
                     <div class="info-table-content col mt-10 md:w-4/5 lg:w-1/2 fadeInRight">
                         <div class="row">
                             <div class="col w-1/2">
-                                <h6>
+                                <h5>
                                     Họ tên
-                                </h6>
+                                </h5>
                                 <p>
                                     {{ $data->memberid->name }}
                                 </p>
                             </div>
                             <div class="col w-1/2 ">
-                                <h6>
+                                <h5>
                                     Ngày sinh
-                                </h6>
+                                </h5>
                                 <p>
                                     {{ $data->memberid->date }}
                                 </p>
@@ -78,18 +78,18 @@
                         </div>
                         <div class="row">
                             <div class="col w-1/2 ">
-                                <h6>
+                                <h5>
                                     Giới tính
-                                </h6>
+                                </h5>
                                 <p>
                                     {{ $data->memberid->sex }}
 
                                 </p>
                             </div>
                             <div class="col w-1/2  ">
-                                <h6>
+                                <h5>
                                     Sở thích
-                                </h6>
+                                </h5>
                                 <p>
                                     {{ $data->memberid->hobby }}
                                 </p>
@@ -158,19 +158,16 @@
                 <h2> Các dự án đã thực hiện </h2>
             </div>
             <hr class="w-full my-8 border-gray-300" />
-            <div class="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-full down_md:max-w-md mx-auto project_text">
+            <div
+                class="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-full down_md:max-w-md mx-auto project_text">
                 @foreach ($data->resource as $item2)
                     <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl ">
-
                         <a href="{!! $item2['link_project']['url'] !!}">
                             <img src="{{ IMG_BASE64 }}" alt="{!! $item2['image_project']['alt'] !!}"
-                                class="object-cover project w-full h-100 zoom lazy" 
-                                data-src=" {!! $item2['image_project']['url'] !!}">
+                                class="object-cover project w-full h-100 zoom lazy" data-src=" {!! $item2['image_project']['url'] !!}">
                         </a>
-
                         <div class="p-5 border border-t-0">
                             <p class="mb-3 text-base font-semibold tracking-wide uppercase">
-
                                 <span class="text-gray-600">{!! $item2['start'] !!} </span>
                                 <span>-</span>
                                 <span class="text-gray-600"> {!! $item2['end'] !!}</span>
@@ -247,7 +244,8 @@
                     </span>
                     <div class="flex justify-around items-center mt-1 space-x-3 iconfooter">
                         @foreach ($data->memberid->contact['mxh'] as $item5)
-                            <a href="{!! $item5['link']['url'] !!}" target="{{ $item5['link']['target'] }}" class="no-underline px-5">
+                            <a href="{!! $item5['link']['url'] !!}" target="{{ $item5['link']['target'] }}"
+                                class="no-underline px-5" rel="noopener">
                                 <img alt="{!! $item5['image']['alt'] !!}" src="{!! $item5['image']['url'] !!} "
                                     class="h-15" />
                             </a>

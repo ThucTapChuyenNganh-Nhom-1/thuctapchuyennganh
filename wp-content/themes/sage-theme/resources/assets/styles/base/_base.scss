@@ -41,7 +41,7 @@
 
   h6,
   .h6 {
-    @apply text-h5 font-medium;
+    @apply text-h5 font-semibold leading-5;
   }
   small {
     @apply text-sm;

@@ -1,6 +1,6 @@
-<?php 
-    $project=$data->resource->posts;
-    $i=0;
+<?php
+$project = $data->resource->posts;
+$i = 0;
 ?>
 <section class="mod-project">
     <div class="container">
@@ -9,19 +9,16 @@
             <h2> Các dự án đã thực hiện </h2>
         </div>
         <hr class="w-full my-8 border-gray-300" />
-        <div class="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-full down_md:max-w-sm mx-auto project_tex">
             @foreach ($project[0]->project as $item2)
-                <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl max-w-[410px]">
-
-                    <a href="{!! $item2['link_project']['url'] !!}" target="{{ $item2['link_project']['target'] }}">
-
-                            <img src="{{IMG_BASE64}}" alt="{!! $item2['image_project']['url'] !!}" class=" object-cover project w-full h-[190px] zoom lazy"
-                             data-src="{!! $item2['image_project']['url'] !!}">
+                <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl">
+                    <a href="{!! $item2['link_project']['url'] !!}" target="{{ $item2['link_project']['target'] }}"
+                        rel="noreferrer">
+                        <img src="{{ IMG_BASE64 }}" alt="{!! $item2['image_project']['url'] !!}"
+                            class=" object-cover project w-full h-[190px] zoom lazy" data-src="{!! $item2['image_project']['url'] !!}">
                     </a>
-
                     <div class="p-5 border border-t-0">
                         <p class="mb-3 text-base font-semibold tracking-wide uppercase max-h-[32px]">
-
                             <span class="text-gray-600">{!! $item2['start'] !!} </span>
                             <span>-</span>
                             <span class="text-gray-600"> {!! $item2['end'] !!}</span>
@@ -30,20 +27,23 @@
                         <div class="flex project-a afmp">
                             @foreach ($item2['link_member'] as $item3)
                                 <a href="{!! $item3['link']['url'] !!}" class="mr-5">
-                                        <img src="{{IMG_BASE64}}" alt="{!! $item3['image']['alt'] !!}" class=" object-cover member-project w-20 h-20 rounded-full shadow-sm lazy"
-                             data-src="{!! $item3['image']['url'] !!}">
+                                    <img src="{{ IMG_BASE64 }}" alt="{!! $item3['image']['alt'] !!}"
+                                        class=" object-cover member-project w-20 h-20 rounded-full shadow-sm lazy"
+                                        data-src="{!! $item3['image']['url'] !!}">
                                 </a>
                             @endforeach
                         </div>
                     </div>
                 </div>
-                @if($i>=5) @break @endif 
+                @if ($i >= 5) @break @endif
                 <?php $i++; ?>
-                @endforeach
+            @endforeach
         </div>
         <hr class="w-full my-8 border-gray-300" />
         <div class="pb-4 text-center">
-            <a href="{!! $data->module['link']->url !!}"> <h4>{!! $data->module['link']->title !!} </h4></a>
+            <a href="{!! $data->module['link']->url !!}">
+                <h4>{!! $data->module['link']->title !!} </h4>
+            </a>
         </div>
         <hr class="w-full my-8 border-gray-300" />
     </div>
