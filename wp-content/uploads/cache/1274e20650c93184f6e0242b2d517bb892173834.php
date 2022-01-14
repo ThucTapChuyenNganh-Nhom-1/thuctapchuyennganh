@@ -3,7 +3,8 @@
         <div class="footer-input_mail w-2/4 text-center mx-auto text-sm hidden xl:block md:block lg:block">
             <div class="col-lg-8 offset-lg-2">
                 <div class="xl:text-2xl md:text-2xl lg:text-4xl font-bold lg:mb-10 itemh1">
-                    {!! $data->module['title'] !!}
+                    <?php echo $data->module['title']; ?>
+
                 </div>
             </div>
             <div class="col-lg-6 offset-lg-3">
@@ -28,12 +29,13 @@
         </div>
         <div class="footer-list grid gap-10 row-gap-3 mb-8 sm:grid-cols-2 lg:grid-cols-4 contact">
             <div class="footer-logo sm:col-span-2 hidden lg:block">
-                <a href="{!! $data->module['logo']->link->url !!}" aria-label="Go home" class="inline-flex items-center">
-                    <img src="{{ IMG_BASE64 }}" alt="!! $data->module['logo']->logo->alt!!}" class="logof lazy"
-                        data-src="{!! $data->module['logo']->logo->url !!}">
+                <a href="<?php echo $data->module['logo']->link->url; ?>" aria-label="Go home" class="inline-flex items-center">
+                    <img src="<?php echo e(IMG_BASE64); ?>" alt="!! $data->module['logo']->logo->alt!!}" class="logof lazy"
+                        data-src="<?php echo $data->module['logo']->logo->url; ?>">
                 </a>
                 <div class="mt-6 lg:max-w-sm">
-                    {!! $data->module['content'] !!}
+                    <?php echo $data->module['content']; ?>
+
                 </div>
             </div>
             <div class="footer-contact text-sm">
@@ -42,24 +44,27 @@
                 </p>
                 <div class="contact_item mx-auto pb-4">
 
-                    <a href="tel:{!! $data->module['contact']->tel !!}" aria-label="Our phone" title="Our phone"
+                    <a href="tel:<?php echo $data->module['contact']->tel; ?>" aria-label="Our phone" title="Our phone"
                         class="transition-colors duration-300 text-deep-purple-accent-400 text-white hover:text-deep-purple-800">
-                        Điện thoại: {!! $data->module['contact']->tel !!}
+                        Điện thoại: <?php echo $data->module['contact']->tel; ?>
+
                     </a>
                 </div>
                 <div class="contact_item pb-4">
 
-                    <a href="mailto:{!! $data->module['contact']->mail !!}" aria-label="Our email" title="Our email"
+                    <a href="mailto:<?php echo $data->module['contact']->mail; ?>" aria-label="Our email" title="Our email"
                         class="transition-colors duration-300 text-deep-purple-accent-400 text-white hover:text-deep-purple-800">
-                        Email: {!! $data->module['contact']->mail !!}
+                        Email: <?php echo $data->module['contact']->mail; ?>
+
                     </a>
                 </div>
                 <div class="contact_item pb-4">
 
-                    <a href="{!! $data->module['contact']->link_address->url !!}" target="_blank" rel="noopener noreferrer" aria-label="Our address"
+                    <a href="<?php echo $data->module['contact']->link_address->url; ?>" target="_blank" rel="noopener noreferrer" aria-label="Our address"
                         title="Our address"
                         class="transition-colors text-white duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                        Địa chỉ: {!! $data->module['contact']->address !!}
+                        Địa chỉ: <?php echo $data->module['contact']->address; ?>
+
                     </a>
                 </div>
             </div>
@@ -68,29 +73,32 @@
                     Mạng xã hội
                 </span>
                 <div class="flex items-center mt-1 space-x-3 justify-center md:justify-start">
-                    @foreach ($data->module['mxh'] as $value)
-                        <a href="{!! $value->link->url !!}"
+                    <?php $__currentLoopData = $data->module['mxh']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <a href="<?php echo $value->link->url; ?>"
                             class="transition-colors  duration-300 hover:text-deep-purple-accent-400 px-2">
-                            <img src="{{ IMG_BASE64 }}" alt="{!! $value->image->alt !!}" class=" lazy"
-                                data-src="{!! $value->image->url !!}">
+                            <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo $value->image->alt; ?>" class=" lazy"
+                                data-src="<?php echo $value->image->url; ?>">
                         </a>
-                    @endforeach
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </div>
-                {!! $data->module['mxh_title'] !!}
+                <?php echo $data->module['mxh_title']; ?>
+
             </div>
         </div>
 
         <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row p-0 iconow c-center">
-            {!! $data->module['copyright'] !!}
+            <?php echo $data->module['copyright']; ?>
+
             <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row justify-center">
-                @foreach ($data->module['fax'] as $value2)
+                <?php $__currentLoopData = $data->module['fax']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value2): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <li>
-                        <a href="{!! $value2->link->url !!}"
+                        <a href="<?php echo $value2->link->url; ?>"
                             class="text-sm text-white transition-colors duration-300 hover:text-deep-purple-accent-400 px-5">
-                            {!! $value2->link->title !!}
+                            <?php echo $value2->link->title; ?>
+
                         </a>
                     </li>
-                @endforeach
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             </ul>
         </div>
     </div>
