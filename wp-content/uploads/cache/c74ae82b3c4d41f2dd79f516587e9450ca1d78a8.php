@@ -175,8 +175,8 @@
                                     class="object-cover project w-full h-100 zoom lazy"
                                     data-src=" <?php echo $item2['image_project']['url']; ?>">
                             </a>
-                            <div class="p-5 border border-t-0">
-                                <div>
+                            <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                                <div class="mb-[2rem]">
                                     <p class="mb-3 text-base font-semibold tracking-wide uppercase">
                                         <span class="text-gray-600"><?php echo $item2['start']; ?> </span>
                                         <span>-</span>

@@ -16,7 +16,7 @@ $project = App::getResourceInfo($post)->project;
                             class="object-cover project w-full h-[256px] zoom" alt="{!! $item2['image_project']['alt'] !!}" />
                     </a>
 
-                    <div class="p-5 border border-t-0">
+                    <div class="p-5 border border-t-0 ">
                         <p class="mb-3 text-base font-semibold tracking-wide uppercase">
                             <span class="text-gray-600">{!! $item2['start'] !!} </span>
                             <span>-</span>
