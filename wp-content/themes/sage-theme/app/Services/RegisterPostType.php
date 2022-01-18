@@ -48,7 +48,7 @@ class RegisterPostType
             //testimonial
             $this->registerTestimonial($types);
              //member
-             $this->registerMember($types);
+            $this->registerMember($types);
         }
     }
 
