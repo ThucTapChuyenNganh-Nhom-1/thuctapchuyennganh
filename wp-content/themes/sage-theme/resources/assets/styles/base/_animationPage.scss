@@ -1,6 +1,7 @@
 @screen xl {
   body:not(.screenshot) {
     .has-animation {
+
       .anima-left,
       .anima-right,
       .anima-bottom,
@@ -9,30 +10,34 @@
         @apply opacity-0;
         transition: opacity .6s, transform .6s;
       }
-     
-      .anima-opacity{
+
+      .anima-opacity {
         transition: opacity 1s, transform .6s;
       }
+
       .anima-left {
         transform: translate3d(-100px, 0, 0);
       }
-     
-      .anima-right{
+
+      .anima-right {
         transform: translate3d(100px, 0, 0);
       }
-    
-      .anima-bottom{
+
+      .anima-bottom {
         transform: translate3d(0, 100px, 0);
       }
-      .anima-top{
+
+      .anima-top {
         transform: translate3d(0, -100px, 0);
       }
-     
+
       .anima-bottom-v2 {
         @apply duration-600 transition-all ease-custom;
       }
+
       .action-animation,
       .set-animation {
+
         &.anima-left,
         &.anima-right,
         &.anima-bottom,
@@ -40,12 +45,15 @@
           transform: none;
           @apply opacity-100 #{!important};
         }
+
         &.anima-opacity {
           @apply opacity-100 #{!important};
         }
+
         &.header {
           transition: opacity .6s, transform .6s, background-color .4s;
         }
+
         .anima-left,
         .anima-right,
         .anima-bottom,
@@ -53,32 +61,37 @@
         .anima-opacity {
           transform: none;
           @apply opacity-100 #{!important};
-       
+
         }
-     
-        .anima-opacity{
+
+        .anima-opacity {
           @apply opacity-100 #{!important};
           transition: opacity .6s, transform .6s;
         }
-  
+
         @for $i from 1 through 10 {
           $delay: $i*.1;
           $delayLine: $i*.3;
           $delay2: $i*.05 + .3;
-          .delay-#{$i}{
-            transition-delay: $delay+s  !important;
+
+          .delay-#{$i} {
+            transition-delay: $delay+s !important;
+
             &::after {
               transition-delay: $delayLine+s;
             }
           }
-          &.delay-#{$i}{
+
+          &.delay-#{$i} {
             transition-delay: $delay+s;
           }
-          .anima-top-list >*:nth-child(#{$i}) {
+
+          .anima-top-list>*:nth-child(#{$i}) {
             transition-delay: $delay2+s;
           }
         }
       }
+
       .animation:not(.set-animation) {
         .anima-bottom-v2 {
           transform: translate3d(0, 150px, 0) !important;
@@ -95,9 +108,9 @@
 
 .zoom:hover {
   -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1); 
-  transform: scale(1.1); 
-  }
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 .fadeInLeft {
   animation: 2s;
@@ -106,33 +119,35 @@
 
 @keyframes fadeInLeft {
   0% {
-      opacity: 0;
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
+
   100% {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }
 
 
-.fadeInRight{
+.fadeInRight {
   animation: 2s;
   animation-name: fadeInRight;
 }
 
 @keyframes fadeInRight {
   0% {
-      opacity: 0;
-      -webkit-transform: translate3d(100%, 0, 0);
-      transform: translate3d(100%, 0, 0);
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
+
   100% {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }
 
@@ -144,14 +159,15 @@
 
 @keyframes fadeInUp {
   0% {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 100%, 0);
-      transform: translate3d(0, 100%, 0);
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
+
   100% {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }
 
@@ -163,13 +179,93 @@
 
 @keyframes fadeInDown {
   0% {
-      opacity: 0;
-      -webkit-transform: translate3d(0, -100%, 0);
-      transform: translate3d(0, -100%, 0);
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
+
   100% {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.menu-info,
+.main-menu {
+
+  a,
+  a:hover {
+    position: relative;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: blue;
+  }
+
+  a.before:hover:before,
+  a.after:hover:after {
+    width: 100%;
+  }
+
+  a.before:before,
+  a.after:after {
+    content: "";
+    transition: 0.5s all ease;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: blue;
+  }
+
+  a.before:before {
+    top: -0.25em;
+  }
+
+  a.after:after {
+    bottom: -0.25em;
+  }
+
+  a.third:after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+
+.project-a {
+  a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: .5s;
+  }
+
+  a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: blue;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+
+  a:hover {
+    color: blue;
+    box-shadow: 0 0 5px blue;
+    text-shadow: 0 0 5px blue;
   }
 }

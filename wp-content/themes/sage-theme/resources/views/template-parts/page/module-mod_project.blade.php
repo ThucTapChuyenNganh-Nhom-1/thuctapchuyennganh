@@ -9,13 +9,14 @@ $i = 0;
             <h2> Các dự án đã thực hiện </h2>
         </div>
         <hr class="w-full my-8 border-gray-300" />
-        <div class="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-full down_md:max-w-sm mx-auto project_tex">
+        <div
+            class="grid gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-full down_md:max-w-sm mx-auto project_tex">
             @foreach ($project[0]->project as $item2)
                 <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl">
                     <a href="{!! $item2['link_project']['url'] !!}" target="{{ $item2['link_project']['target'] }}"
                         rel="noreferrer">
                         <img src="{{ IMG_BASE64 }}" alt="{!! $item2['image_project']['url'] !!}"
-                            class=" object-cover project w-full h-[190px] zoom lazy" data-src="{!! $item2['image_project']['url'] !!}">
+                            class=" object-cover project w-full h-[190px] zoom lazy" data-src="{!! empty($item2['image_project']['url']) ? img_project : $item2['image_project']['url'] !!}">
                     </a>
                     <div class="p-5 border border-t-0">
                         <p class="mb-3 text-base font-semibold tracking-wide uppercase max-h-[32px]">
@@ -23,13 +24,16 @@ $i = 0;
                             <span>-</span>
                             <span class="text-gray-600"> {!! $item2['end'] !!}</span>
                         </p>
-                        {!! $item2['content'] !!}
+                        <div>
+                            {!! $item2['content'] !!}
+                        </div>
+
                         <div class="flex project-a afmp">
                             @foreach ($item2['link_member'] as $item3)
                                 <a href="{!! $item3['link']['url'] !!}" class="mr-5">
                                     <img src="{{ IMG_BASE64 }}" alt="{!! $item3['image']['alt'] !!}"
-                                        class=" object-cover member-project w-20 h-20 rounded-full shadow-sm lazy"
-                                        data-src="{!! $item3['image']['url'] !!}">
+                                        class="object-cover member-project w-20 h-20 rounded-full shadow-sm lazy"
+                                        data-src=" {{ empty($item3['image']['url']) ? img_avt : $item3['image']['url'] }}">
                                 </a>
                             @endforeach
                         </div>

@@ -2,6 +2,7 @@ const inset = {
   auto: 'auto',
   'full': '100%',
   '1/2': '50%',
+  '2%': '2%',
   '0': '0',
   '1': '2px',
   '1.5': '3px',
@@ -77,6 +78,7 @@ const inset = {
   '-235': '-470px',
   '-327': '-654px',
   '-100-per': '-100%'
+
 }
 module.exports = {
   inset

@@ -15,7 +15,10 @@ if (defined('IS_WP_PROD') && IS_WP_PROD) {
 define('IMG_BASE64', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC');
 define('S3_FONT', 'https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
 define('ACF_OPTION', 'option');
+define('img_avt', 'https://secure.gravatar.com/avatar/b7a4e46ee7a42ccf07f7697b1d803be5?s=1024&d=mm&r=g');
+define('img_project', 'https://icon-library.com/images/ios-folder-icon/ios-folder-icon-20.jpg');
 define('SCREEN', 'screen');
+
 
 // define in RegisterPostType.php
 define('ICON_ID', 'icon_id');

@@ -47,7 +47,7 @@
       @apply bg-gray-300 right-0 left-0 top-0 bottom-full absolute z-a-1;
     }
     &.is-open-menu {
-      height: calc(100% + 70px);
+      height: calc(40%);
 
       &::after {
         @apply bottom-0;

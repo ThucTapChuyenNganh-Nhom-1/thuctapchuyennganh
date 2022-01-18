@@ -20,7 +20,8 @@ const Colors = {
   },
   
   lightBlue: '#add8e6',
-
+  darkBlue:'#4894f2',
+  
   black: '#000',
   transparent: 'transparent'
 }

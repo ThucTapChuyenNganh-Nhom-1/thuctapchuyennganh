@@ -27,7 +27,7 @@
             "name": "personal_image",
             "type": "image",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -51,7 +51,7 @@
             "name": "name",
             "type": "text",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -70,7 +70,7 @@
             "name": "sex",
             "type": "radio",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -481,5 +481,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1641386301
+    "modified": 1642514575
 }
