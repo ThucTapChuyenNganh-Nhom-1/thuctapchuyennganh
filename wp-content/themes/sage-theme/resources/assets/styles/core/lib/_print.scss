@@ -13,6 +13,7 @@ a {
   color: #000;
 }
 
+
 .menu-info ul, 
 .project-img-avt,
 #ability svg{
@@ -331,19 +332,19 @@ filter: contrast(0.5);
   display: none;
 }
 
-// .home{
-//   padding: 7%;
-//   padding-right: 15%;
-// }
+.home{
+  padding: 7%;
+  padding-right: 15%;
+}
 
 .project{
   max-width:900px;
   width: 900px;
   height: 400px;}
-.imgbh{
+
+  .imgbh{
   padding-left: 20%;
 }
-
 .iconfooter{
   display: none;
   max-width: 100px;
@@ -369,9 +370,9 @@ filter: contrast(0.5);
 .footer-logo{
   text-align: center;
 }
-// .itemh1{
-//   padding-right: 10% ;
-// }
+.itemh1{
+  padding-right: 10% ;
+}
 
 .info{
   padding-left: 7%;
