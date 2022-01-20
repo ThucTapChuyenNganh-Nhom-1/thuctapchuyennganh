@@ -13,8 +13,6 @@
 
                 {!! $data->module['content'] !!}
 
-                <hr class="mb-5 border-gray-300" />
-
                 {{-- chưa đổ BE list icon --}}
                 <div class="flex items-center justify-center lg:justify-start ls_icon space-x-6 ">
                     @foreach ($data->module['link'] as $value)
@@ -26,8 +24,8 @@
                     @endforeach
                 </div>
             </div>
-            <div class="col slideInRight w-full lg:w-6/12 right-banner fadeInRight">
-                <img src="{{ IMG_BASE64 }}" alt="{!! $data->module['image']->alt !!}" class="imgbh lazy"
+            <div class="col slideInRight w-full lg:w-6/12 right-banner fadeInRight imgbh">
+                <img src="{{ IMG_BASE64 }}" alt="{!! $data->module['image']->alt !!}" class=" lazy"
                     data-src="{!! $data->module['image']->url !!}">
             </div>
         </div>

@@ -7,8 +7,6 @@
                 <?php echo $data->module['content']; ?>
 
 
-                <hr class="mb-5 border-gray-300" />
-
                 
                 <div class="flex items-center justify-center lg:justify-start ls_icon space-x-6 ">
                     <?php $__currentLoopData = $data->module['link']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -20,8 +18,8 @@
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </div>
             </div>
-            <div class="col slideInRight w-full lg:w-6/12 right-banner fadeInRight">
-                <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo $data->module['image']->alt; ?>" class="imgbh lazy"
+            <div class="col slideInRight w-full lg:w-6/12 right-banner fadeInRight imgbh">
+                <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo $data->module['image']->alt; ?>" class=" lazy"
                     data-src="<?php echo $data->module['image']->url; ?>">
             </div>
         </div>

@@ -14,7 +14,8 @@ module.exports = {
   darkMode: false,
   theme: {
     fontFamily: {
-      sans: ['Poppins', 'sans-serif'],
+      roboto: [ 'Roboto', 'sans-serif'],
+      // sans: ['Poppins', 'sans-serif'],
       montserrat: ['Montserrat', 'sans-serif'],
       syncopate: ['Syncopate', 'sans-serif']
     },

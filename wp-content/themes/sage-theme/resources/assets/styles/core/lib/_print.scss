@@ -332,19 +332,20 @@ filter: contrast(0.5);
   display: none;
 }
 
-.home{
-  padding: 7%;
-  padding-right: 15%;
-}
+// .home{
+//   padding: 7%;
+//   padding-right: 15%;
+// }
 
 .project{
   max-width:900px;
   width: 900px;
   height: 400px;}
 
-  .imgbh{
-  padding-left: 20%;
-}
+//   .imgbh{
+//   padding-left: 20%;
+// }
+
 .iconfooter{
   display: none;
   max-width: 100px;
@@ -365,14 +366,17 @@ filter: contrast(0.5);
     max-width: 400px;
   max-height: 376px;
 }
+
 .set,
 .project_text, 
-.footer-logo{
+.footer-logo,
+.imgbh{
   text-align: center;
 }
-.itemh1{
-  padding-right: 10% ;
-}
+
+// .itemh1{
+//   padding-right: 10% ;
+// }
 
 .info{
   padding-left: 7%;
