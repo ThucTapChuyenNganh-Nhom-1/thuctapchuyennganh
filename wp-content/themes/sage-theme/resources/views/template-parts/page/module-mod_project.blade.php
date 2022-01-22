@@ -17,7 +17,8 @@ $i = 0;
                     <a href="{!! $item2['link_project']['url'] !!}" target="{{ $item2['link_project']['target'] }}"
                         rel="noreferrer">
                         <img src="{{ IMG_BASE64 }}" alt="{!! $item2['image_project']['url'] !!}"
-                            class=" object-cover project w-full h-[190px] zoom lazy" data-src="{!! empty($item2['image_project']['url']) ? img_project : $item2['image_project']['url'] !!}">
+                            class=" object-cover project w-full h-100 zoom lazy" 
+                            data-src="{!! empty($item2['image_project']['url']) ? img_project : $item2['image_project']['url'] !!}">
                     </a>
                     <div class="p-5 border border-t-0">
                         <p class="mb-3 text-base font-semibold tracking-wide uppercase">

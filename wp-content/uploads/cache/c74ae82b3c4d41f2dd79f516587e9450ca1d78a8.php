@@ -58,7 +58,7 @@
                     </div>
                     <!-- nội dung phải -->
                     <div class="info-table-content col mt-10 md:w-4/5 lg:w-1/2 fadeInRight">
-                        <div class="row">
+                        <div class="row info-table-content-1">
                             <div class="col w-1/2">
                                 <h5>
                                     Họ tên
@@ -78,7 +78,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row info-table-content-1">
                             <div class="col w-1/2 ">
                                 <h5>
                                     Giới tính
@@ -116,7 +116,6 @@
             </div>
             <div class="px-4 mx-auto sm:max-w-sm md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
                 <div class="ability-content grid gap-8 sm:mx-auto md:grid-cols-2 lg:max-w-full lg:grid-cols-3">
-
                     <?php $__currentLoopData = $data->memberid->ability; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <div class="flex ">
                             <div class="sm:mr-4">
@@ -171,10 +170,11 @@
                     <?php $__currentLoopData = $data->resource; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item2): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <div
                             class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-xl flex flex-col justify-between">
-                            <a href="<?php echo $item2['link_project']['url']; ?>">
+                            <a href="<?php echo $item2['link_project']['url']; ?>" target="<?php echo e($item2['link_project']['target']); ?>"
+                            rel="noreferrer">
                                 <img src="<?php echo e(IMG_BASE64); ?>" alt="<?php echo $item2['image_project']['alt']; ?>"
-                                    class="object-cover project w-full h-100 zoom lazy"
-                                    data-src=" <?php echo $item2['image_project']['url']; ?>">
+                                    class="object-cover project w-full min-h-200 zoom lazy"
+                                    data-src=" <?php echo e(empty($item2['image_project']['url']) ? img_project : $item2['image_project']['url']); ?>">
                             </a>
                             <div class="p-5 border border-t-0">
                                 <p class="mb-3 text-base font-semibold tracking-wide uppercase">
@@ -185,7 +185,6 @@
                                 <?php echo $item2['content']; ?>
 
                             </div>
-                            
                             <div class="flex project-a afmp pl-5 pb-5">
                                 <?php $__currentLoopData = $item2['link_member']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item3): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                     <a href="<?php echo $item3['link']['url']; ?>" class="mr-5">

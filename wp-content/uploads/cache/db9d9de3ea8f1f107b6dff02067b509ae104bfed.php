@@ -26,17 +26,17 @@
                 <ul
                     class="main-menu-ul navbar-nav list-none flex mb-0 p-0 text-white flex-col text-inherit
         lg:flex-row lg:justify-end">
-                    <li class="menu-item mb-0 ">
-                        <a class="block py-9 lg:p-9 no-underline text-black hover:text-blue-700 third after" href="#">TRANG CHỦ</a>
+                    <li class="menu-item mb-0 down_lg:text-center down_lg:mx-auto ">
+                        <a class="block py-9 lg:px-9 lg:py-16 xl:py-15 font-semibold down_lg:w-125 no-underline text-black hover:text-blue-700 third after" href="#">TRANG CHỦ</a>
                     </li>
-                    <li class="menu-item mb-0">
-                        <a class="block py-9 lg:p-9 no-underline text-black hover:text-blue-700 third after" href="#aboutus">GIỚI THIỆU</a>
+                    <li class="menu-item mb-0 down_lg:text-center down_lg:mx-auto">
+                        <a class="block py-9 lg:px-9 lg:py-16 xl:py-15 font-semibold down_lg:w-125 no-underline text-black hover:text-blue-700 third after" href="#aboutus">GIỚI THIỆU</a>
                     </li>
-                    <li class="menu-item mb-0">
-                        <a class="block py-9 lg:p-9 no-underline text-black hover:text-blue-700 third after" href="#projecthome">DỰ ÁN</a>
+                    <li class="menu-item mb-0 down_lg:text-center down_lg:mx-auto">
+                        <a class="block py-9 lg:px-9 lg:py-16 xl:py-15 font-semibold down_lg:w-125 no-underline text-black hover:text-blue-700 third after" href="#projecthome">DỰ ÁN</a>
                     </li>
-                    <li class="menu-item mb-0">
-                        <a class="block py-9 lg:p-9 no-underline text-black hover:text-blue-700 third after" href="#contacthome">LIÊN HỆ</a>
+                    <li class="menu-item mb-0 down_lg:text-center down_lg:mx-auto">
+                        <a class="block py-9 lg:px-9 lg:py-16 xl:py-15 font-semibold down_lg:w-125 no-underline text-black hover:text-blue-700 third after" href="#contacthome">LIÊN HỆ</a>
                     </li>
                 </ul>
             </div>

@@ -1,6 +1,6 @@
 <footer id="contacthome" class="mod-footer fadeIn_1 -mb-50">
     <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-1280 md:px-24 lg:px-8 ">
-        <div class="footer-input_mail w-2/4 text-center mx-auto text-sm hidden xl:block md:block lg:block">
+        {{-- <div class="footer-input_mail w-2/4 text-center mx-auto text-sm hidden xl:block md:block lg:block">
             <div class="col-lg-8 offset-lg-2">
                 <div class="xl:text-2xl md:text-2xl lg:text-4xl font-bold lg:mb-10 itemh1">
                     {!! $data->module['title'] !!}
@@ -25,7 +25,7 @@
                     </div>
                 </form>
             </div>
-        </div>
+        </div> --}}
         <div class="footer-list grid gap-10 row-gap-3 mb-8 sm:grid-cols-2 lg:grid-cols-4 contact">
             <div class="footer-logo sm:col-span-2 hidden lg:block">
                 <a href="{!! $data->module['logo']->link->url !!}" aria-label="Go home" class="inline-flex items-center">

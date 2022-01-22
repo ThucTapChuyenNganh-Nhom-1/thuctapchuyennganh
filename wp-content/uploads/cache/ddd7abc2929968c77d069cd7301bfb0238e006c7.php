@@ -1,13 +1,3 @@
-<?php
-// foreach ($post as $test) {
-//     $mota = get_field('mota', $test->ID);
-//     $image_avt = get_field('personal_image', $test->ID);
-// }
-// var_dump(App::getMemberInfo($post));
-
-?>
-
-
 <div
     class="menu-info w-full z-1 md:w-60 px-2 bg-blue-500 text-center fixed bottom-0 md:pt-8 md:top-0 md:left-0 h-27 md:h-screen md:border-r-2 md:border-gray-600">
     <div class="md:relative mx-auto lg:float-right">
@@ -51,19 +41,17 @@
     </div>
 </div>
 
-
 <section id="info" class="info md:ml-60 -mt-40">
     <div class="container">
         <div class="pb-10 text-center">
             <h1><?php echo e(App::getMemberInfo($post)->name); ?></h1>
             <p> <?php echo e(App::getMemberInfo($post)->des); ?> </p>
             <div class="info-table row justify-center ">
-                <!-- nội dung trái-->
                 <div class="col md:w-4/5 lg:w-1/2 fadeInLeft">
                     <img class="rounded-3xl" src=" <?php echo e(App::getMemberInfo($post)->avt['url']); ?> "
                         alt="<?php echo e(App::getMemberInfo($post)->avt['alt']); ?>">
                 </div>
-                <!-- nội dung phải -->
+
                 <div class="info-table-content col mt-10 md:w-4/5 lg:w-1/2 fadeInRight">
                     <div class="row">
                         <div class="col w-1/2">
@@ -114,7 +102,6 @@
 </section>
 
 <div class="h-50"></div>
-
 
 <?php 
     $ability = App::getMemberInfo($post)->ability;

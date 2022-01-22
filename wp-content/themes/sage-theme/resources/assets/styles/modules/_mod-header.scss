@@ -47,12 +47,13 @@
       @apply bg-gray-300 right-0 left-0 top-0 bottom-full absolute z-a-1;
     }
     &.is-open-menu {
-      height: calc(40%);
+      height: 50%;
 
       &::after {
         @apply bottom-0;
       }
     }
+    
   }
 
   .touch {
@@ -60,6 +61,7 @@
       flex: 0 0 auto;
     }
   }
+
 }
 
 @media (max-width: 767px) and (orientation: landscape) {

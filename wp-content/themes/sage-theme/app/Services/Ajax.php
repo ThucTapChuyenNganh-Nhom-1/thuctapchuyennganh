@@ -39,7 +39,7 @@ class Ajax
                 $img = empty($mem->img['url']) ? img_avt : $mem->img['url'];
                 echo '<div>';
                     echo '<div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">';
-                        echo '<img class="object-cover w-full h-[224] md:h-[256px] xl:h-[320px]" src="'. $img .'" alt="Person" />';
+                        echo '<img class="object-cover w-full h-107 2xl:h-157" src="'. $img .'" alt="Person" />';
                             echo '<div class="member-info absolute inset-0 flex flex-col justify-center px-10 py-8 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">';
                                 echo '<a href="'.$mem->mem_link['url'] .'">'.$mem->mem_link['title'].' </a>';
                                 echo $mem->about_me;
